@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="pt" prefix="
+    addthis: http://www.addthis.com/help/api-spec
+    og: http://ogp.me/ns#
+    fb: http://ogp.me/ns/fb#
+    article: http://ogp.me/ns/article#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+        <script type="text/javascript">
+            if (("cabecalivre.com" == window.location.host) && (window.location.protocol != "https:")) {
+                window.location = window.location.toString().replace(/^http:/, "https:");
+            }
+        </script>
+    
+
+    <title>Covid-19: será que os números estão inflados? - Cabeça Livre</title>
+    <meta name="author" content="Daniel Peterson">
+    <meta name="description" content="Você lembra do que o Dr. Drauzio Varella já explicava no Fantástico em março, no início da pandemia no Brasil, que para a maioria das pessoas os sintomas da ...">
+    <link rel="canonical" href="https://cabecalivre.com/2020/10/09/covid-19-sera-que-os-numeros-estao-inflados/">
+    <link rel="alternate" type="application/rss+xml" title="Cabeça Livre" href="https://cabecalivre.com/feed.xml" />
+
+    <!-- OpenSearch -->
+    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar em Cabeça Livre" href="https://cabecalivre.com/opensearch.xml" />
+
+    <!-- Open Graph -->
+    
+        <meta property="article:published_time" content="2020-10-09 23:00:00 -0300"/>
+        
+            <meta property="article:publisher" content="https://facebook.com/CabecaLivreCom" />
+        
+    
+    
+    
+    <meta property="og:description" content="Você lembra do que o Dr. Drauzio Varella já explicava no Fantástico em março, no início da pandemia no Brasil, que para a maioria das pessoas os sintomas da ..." />
+    
+    
+        <meta property="og:image" content="https://cabecalivre.com/files/2020/10/covid-paulistana.jpg" />
+    
+    <meta property="og:site_name" content="Cabeça Livre" />
+    <meta property="og:title" content="Covid-19: será que os números estão inflados?" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://cabecalivre.com/2020/10/09/covid-19-sera-que-os-numeros-estao-inflados/" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@CabecaLivreCom" />
+    
+
+    <!-- Favicons (made with RealFaviconGenerator.net) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cabecalivre.com/apple-touch-icon.png?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cabecalivre.com/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cabecalivre.com/favicon-16x16.png?v=4">
+    <link rel="manifest" href="https://cabecalivre.com/site.webmanifest?v=4">
+    <link rel="mask-icon" href="https://cabecalivre.com/safari-pinned-tab.svg?v=4" color="#424242">
+    <link rel="shortcut icon" href="https://cabecalivre.com/favicon.ico?v=4">
+    <meta name="msapplication-TileColor" content="#424242">
+    <meta name="theme-color" content="#424242">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="/libs/bootstrap-material-design/4.1.2/custom/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    
+
+    <!-- Fonte Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- JS -->
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.16.1-lts/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.js" integrity="sha256-GaerX2a/DuOnPrxn/4vH13dobiFUe/27LO6gCZDNauA=" crossorigin="anonymous"></script>
+    
+    <script src="/libs/font-awesome-gab-parler/0.3.0/js/font-awesome-gab-parler.js"></script>
+    <script src="//inc.freefind.com/inc/ffse-overlay.min.js" async></script>
+    <script src="/assets/js/main.js"></script>
+
+    
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65333685-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-65333685-6');
+        </script>
+        <!-- End Google Analytics -->
+    
+
+    
+        <!-- Google AdSense -->
+        <script data-ad-client="ca-pub-5193467168351289" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+    
+        <!-- AddThis -->
+        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec0947574225d87"></script>
+        <script type="text/javascript">
+            var addthis_config = {
+                data_track_clickback: true,
+                data_track_addressbar: true,
+                ui_language: 'pt'
+            };
+            var addthis_share = {
+                url: 'https://cabecalivre.com/2020/10/09/covid-19-sera-que-os-numeros-estao-inflados/',
+                title: document.title,
+                description: 'Você lembra do que o Dr. Drauzio Varella já explicava no Fantástico em março, no início da pandemia no Brasil, que para a maioria das pessoas os sintomas da Covid seriam leves, semelhantes aos de um resfriado? Ele não estava errado. Hoje, temos dados que confirmam sua afirmação feita lá atrás.'
+            };
+        </script>
+        <!-- End AddThis -->
+    
+</head>
+
+
+<body itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+        <!-- Fixed navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-toggle="drawer" data-target="#drawer">
+            <span class="sr-only">Exibir/esconder navegação</span>
+            <i class="material-icons">menu</i>
+        </button>
+
+        <a class="navbar-brand" href="/">Cabeça Livre</a>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav m-auto">
+                <!--
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/archive/">Archive</a>
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                -->
+            </ul>
+            <form class="form-inline" id="navbar-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                <input type="hidden" name="si" value="28330050">
+        		<input type="hidden" name="pid" value="r">
+        		<input type="hidden" name="n" value="0">
+        		<input type="hidden" name="_charset_" value="">
+        		<input type="hidden" name="bcd" value="&#247;">
+        		<input type="hidden" name="lang" value="pt">
+                <div class="input-group">
+                    <input class="form-control search-field" id="navbar-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary btn-number search-button" id="navbar-search-button" type="submit" value="search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div><!--#navbar-->
+    </div><!--.container-->
+</nav>
+
+        <!-- Navigation drawer -->
+<div id="drawer" class="bmd-layout-drawer bg-faded">
+    <header>
+        <a class="navbar-brand" href="/">Cabeça Livre</a>
+    </header>
+    <form class="form-inline border-top" id="drawer-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+        <input type="hidden" name="si" value="28330050">
+        <input type="hidden" name="pid" value="r">
+        <input type="hidden" name="n" value="0">
+        <input type="hidden" name="_charset_" value="">
+        <input type="hidden" name="bcd" value="&#247;">
+        <input type="hidden" name="lang" value="pt">
+        <div class="bmd-form-group-sm">
+            <div class="input-group">
+                <input class="form-control search-field" id="drawer-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary btn-number search-button" id="drawer-search-button" type="submit" value="search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div><!-- .input-group -->
+        </div><!-- .bmd-form-group-sm -->
+    </form>
+    <ul class="list-group list-group-flush border-top" id="drawer-links">
+        
+            
+                
+            
+                
+            
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/archive/">Archive</a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    </ul>
+</div>
+
+
+        <main class="bmd-layout-content">
+            <div class="container" id="main-container">
+                <div class="row">
+                    <div class='col-sm-8'>
+                        <div class="blog-post card mb-3">
+    <header class="card-header">
+        <h1 class="blog-post-title" itemprop="headline name">
+            <a class="blog-post-link" href="/2020/10/09/covid-19-sera-que-os-numeros-estao-inflados/" itemprop="mainEntityOfPage url">
+                Covid-19: será que os números estão inflados?
+            </a>
+        </h1>
+        <div class="blog-post-meta row">
+            <div class='col-sm-6'>
+                <p class="blog-post-date" itemprop="datePublished" content="2020-10-09">
+                    <a href="/2020/10/09/">
+                        09 de
+                        
+                        Outubro
+                        
+                        de 2020
+                    </a>
+                </p>
+                <meta itemprop="dateModified" content="2022-02-07" />
+            </div>
+            <div class='col-sm-6'>
+                
+                    <div class='blog-post-share'>
+                        <!-- AddThis Sharing Buttons -->
+                        <div class="addthis_toolbox addthis_default_style">
+                            <a class="addthis_button_facebook"></a>
+                            <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                            <a class="addthis_button_telegram"></a>
+                            <a class="addthis_button_favorites"></a>
+                            <a class="addthis_button_compact"></a>
+                            <a class="addthis_counter addthis_bubble_style"></a>
+                        </div>
+                        <!-- AddThis Sharing Buttons End -->
+                    </div><!-- .blog-post-share -->
+                
+            </div><!-- .col-sm-6 -->
+        </div><!-- .blog-post-meta -->
+    </header>
+
+    <article class="blog-post-content card-body">
+        
+
+        <div itemprop="articleBody mainEntity">
+            <p>Você lembra do que o <a href="https://g1.globo.com/fantastico/noticia/2020/03/15/drauzio-varella-essa-epidemia-vai-passar-se-cada-um-fizer-a-sua-parte-vai-passar-mais-depressa.ghtml">Dr. Drauzio Varella</a> já explicava no Fantástico em março, no início da pandemia no Brasil, que para a maioria das pessoas os sintomas da Covid seriam leves, semelhantes aos de um resfriado?</p>
+
+<blockquote>
+  <p>O Coronavírus chegou no Brasil. E agora? Tudo, a gente não sabe. É a primeira vez. Mas a gente sabe que é um vírus que se dissemina depressa. Provoca uma doença grave? Na grande maioria das vezes, não. Provoca um quadro benigno, muito semelhante ao dos resfriados. Mas existe uma pequena porcentagem que vai ter complicações pulmonares. Quem são elas? São os mais velhos, os que têm mais de 70, 80 anos. Os que têm doenças crônicas: pressão alta descontrolada, diabetes descompensada, insuficiência cardíaca, renal, doenças que comprometem o funcionamento do sistema imunológico, e os fumantes, porque o cigarro desgraça os pulmões.</p>
+
+  <p>(<a href="https://g1.globo.com/fantastico/noticia/2020/03/15/drauzio-varella-essa-epidemia-vai-passar-se-cada-um-fizer-a-sua-parte-vai-passar-mais-depressa.ghtml">Dr. Drauzio Varella</a> - <em>link</em> alternativo no <a href="https://web.archive.org/web/20200316130742/https://g1.globo.com/fantastico/noticia/2020/03/15/drauzio-varella-essa-epidemia-vai-passar-se-cada-um-fizer-a-sua-parte-vai-passar-mais-depressa.ghtml">Internet Archive</a>)</p>
+</blockquote>
+
+<p>Ele não estava errado. Hoje, temos dados que confirmam sua afirmação feita lá atrás.</p>
+
+<p>Antes de mais nada, quero deixar claro que sei que não são apenas números, estamos falando de vidas humanas. Todas as mortes são tristes, qualquer que seja o motivo. Mas quero convidar você a descansar seu lado <strong>emocional</strong> por 10 minutos — ele tem sido muito demandado atualmente, não é mesmo? — e exercitar seu lado <strong>racional</strong>. Por favor, ao ler esse texto, atenha-se aos números. Sinta-se à vontade para me xingar depois, nos comentários.</p>
+
+<p>Pois bem. Dito isso, vamos lá.</p>
+
+<h2 id="morte-por-covid-ou-por-comorbidade">Morte por Covid? Ou por comorbidade?</h2>
+
+<p>A <a href="https://www.who.int/">Organização Mundial da Saúde (OMS)</a> define <strong><a href="https://www.euro.who.int/__data/assets/pdf_file/0009/342297/Comorbidity-report_E-web.pdf">comorbidade</a></strong> como “a presença de uma ou mais doenças ou distúrbios adicionais que ocorrem concomitantemente com uma doença ou distúrbio primário”.</p>
+
+<p>Estatísticas publicadas pelo <a href="https://www.cdc.gov/nchs/nvss/vsrr/covid_weekly/index.htm#Comorbidities">Centro de Controle de Doenças (CDC)</a>, dos Estados Unidos, mostram que, das mortes envolvendo Covid-19, em 94% delas havia pelo menos mais uma causa contribuindo para a morte. Na média, cada morte estava associada a mais outras 2 ou 3 causas. Exemplos de outras causas incluem hipertensão e diabetes. A Covid-19 foi a única causa em 6% das mortes contabilizadas. O <a href="https://www.cdc.gov/nchs/nvss/vsrr/covid_weekly/index.htm#Comorbidities"><em>site</em> do CDC</a> mostra uma tabela com dados de comorbidades que vão de 1º de fevereiro a 03 de outubro.</p>
+
+<p>Estatísticas divulgadas em abril pelo <a href="https://www1.folha.uol.com.br/equilibrioesaude/2020/04/8-em-cada-10-mortos-pelo-coronavirus-tem-comorbidades-cardiopatia-e-diabetes-lideram.shtml">Ministério da Saúde</a> do Brasil e em setembro pelo <a href="https://www.cnnbrasil.com.br/saude/2020/09/23/cerca-de-70-dos-pacientes-de-covid-19-tratados-no-hcor-tinham-ate-60-anos">Hospital do Coração (HCor)</a> em São Paulo apontam que também no Brasil a maioria das mortes envolvendo Covid-19 também envolviam comorbidades.</p>
+
+<p>Dessas estatísticas, podemos inferir que: <strong>é raro alguém morrer unicamente por Covid</strong>.</p>
+
+<p>Como visto, na maioria dos óbitos a Covid aparece junto de alguma outra causa, como hipertensão ou diabetes. O que leva a crer que provavelmente <strong>não é a Covid, mas sim a comorbidade a principal causa de morte</strong>. Porque se fosse o contrário, se a Covid fosse a principal causa de morte, teríamos mais pessoas morrendo unicamente por Covid, sem nenhuma outra causa adicional, também nesse caso provavelmente o número de óbitos seria maior, já que mais pessoas sem comorbidades seriam atingirias. Por isso, pode-se afirmar que as pessoas morrem <strong>com</strong> Covid, mas <strong>não necessariamente de</strong> ou <strong>por</strong> Covid.</p>
+
+<p>Mas se não fosse a Covid, alguém que morreu por diabetes e Covid teria seguido sua vida normalmente tratando sua diabetes? Não necessariamente. Não podemos afirmar com toda certeza. Primeiro, porque é sempre difícil falar no futuro do pretérito (“o que teria acontecido se…”). Segundo: ninguém tem como dizer ao certo quanto tempo de vida essa pessoa ainda teria. Talvez, se não fosse a Covid, ela viveria mais 30 anos. Talvez, mesmo sem Covid, ela já morreria em mais 30 dias. Talvez a Covid apenas antecipou a morte. Não há como saber.</p>
+
+<p>Mesmo assim, os noticiários e as estatísticas oficiais colocam todos esses óbitos somente na conta da Covid, muitas vezes sem lembrar de fazer as devidas ressalvas.</p>
+
+<p>Isso levanta a suspeita que dá título a esse texto: será que os números estão inflados?</p>
+
+<p>Independente de você concordar se há motivo para suspeitar dos números, creio que concordemos que eles seriam mais informativos se aparecessem assim:</p>
+
+<ul>
+  <li>óbitos unicamente por diabetes;</li>
+  <li>óbitos unicamente por hipertensão;</li>
+  <li>óbitos unicamente por Covid;</li>
+  <li>óbitos por diabetes e Covid;</li>
+  <li>óbitos por hipertensão e Covid;</li>
+  <li>e assim por diante.</li>
+</ul>
+
+<h2 id="análise-cuidadosa-dos-números-da-itália">Análise cuidadosa dos números da Itália</h2>
+
+<p>Muitos <em>sites</em>, como o britânico <a href="https://www.telegraph.co.uk/global-health/science-and-disease/have-many-coronavirus-patients-died-italy/">The Telegraph</a> e o <a href="https://brasilsemmedo.com/estudo-de-oxford-contesta-numero-de-mortes-por-coronavirus-na-italia/">Brasil Sem Medo</a>, reproduzem uma fala atribuída ao <a href="https://it.wikipedia.org/wiki/Walter_Ricciardi">Professor Walter Ricciardi</a>, conselheiro do <a href="https://www.iss.it/">Instituto Nacional de Saúde da Itália</a> (o Ministério da Saúde de lá) e da OMS:</p>
+
+<blockquote>
+  <p>Na reavaliação pelo Instituto Nacional de Saúde, apenas 12 por cento dos atestados de óbito mostraram uma causalidade direta do coronavírus, enquanto 88% dos pacientes que morreram tiveram pelo menos uma pré-morbidade - muitos tiveram duas ou três.</p>
+</blockquote>
+
+<p>Confesso que não encontrei onde ele disse ou escreveu isso originalmente (se você souber ou conseguir encontrar, por favor, me indique nos comentários).</p>
+
+<p>Mas encontrei um <a href="https://www.epicentro.iss.it/coronavirus/bollettino/Report-COVID-2019_20_marzo_eng.pdf">relatório do Instituto Nacional de Saúde da Itália de 20 de março</a> que fala, na verdade, em 1,2% (ou seja, 10 vezes menos). Será que o professor não viu a vírgula?</p>
+
+<p>Seja como for, a estatística mais recente, de <a href="https://www.epicentro.iss.it/en/coronavirus/bollettino/Report-COVID-2019_4_october_2020.pdf">4 de outubro</a>, traz os seguintes dados:</p>
+
+<ul>
+  <li>total de mortes relacionadas à Covid-19 na Itália: <strong>36.008</strong> (para efeito desse relatório, são consideradas mortes relacionadas à Covid-19 aquelas que ocorreram em pacientes que fizeram o teste PCR e deram positivo para Covid-19, independentemente de doenças pré-existentes)
+    <ul>
+      <li>desses 36.008, havia informação sobre doenças pré-existentes para <strong>4.400</strong>, que morreram em hospitais, de modo que foi possível analisar seus prontuários
+        <ul>
+          <li>desses 4.400, <strong>160</strong> não tinham comorbidades, ou seja, morreram unicamente por Covid-19 (3,6% de 4.400)</li>
+          <li>desses 4.400, <strong>62,9%</strong> apresentavam <strong>3 ou mais comorbidades</strong></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Os dados acima são os que estão no <a href="https://www.epicentro.iss.it/en/coronavirus/bollettino/Report-COVID-2019_4_october_2020.pdf">relatório</a>. Você pode <a href="https://www.epicentro.iss.it/en/coronavirus/bollettino/Report-COVID-2019_4_october_2020.pdf">ler</a> e conferir.</p>
+
+<p>A partir desses dados, podemos fazer algumas contas e concluir mais algumas coisas:</p>
+
+<ul>
+  <li>para 36.008 - 4.400 = <strong>31.608</strong>, ou seja, 31.608 / 36.008 = <strong>87,78%</strong> das mortes envolvendo Covid-19 na Itália, não há como afirmar com toda certeza que a Covid foi a única causa de morte, porque não há informação sobre doenças pré-existentes nesses casos (claro, tampouco pode-se afirmar que havia comorbidades, pelo mesmo motivo)</li>
+  <li>só podemos afirmar <strong>com certeza absoluta</strong> que a Covid-19 foi <strong>a única responsável</strong> em 160 / 36.008 = <strong>0,44%</strong> das mortes envolvendo Covid-19 na Itália</li>
+</ul>
+
+<p>Não estou afirmando com isso que o coronavírus não teve impacto nesses óbitos, como insinua <a href="https://oglobo.globo.com/sociedade/coronavirus-servico/licao-da-italia-para-brasil-agir-imediatamente-contra-coronavirus-diz-assessor-do-governo-italiano-24358075">O Globo</a> ao “desmentir” o Brasil Sem Medo. Que houve impacto do coronavírus, provavelmente houve, o que questiono é: <strong>o quão significante</strong> foi esse impacto? Em uma morte causada por diabetes e Covid, por exemplo, será que a Covid <strong>pesou mais</strong> para levar a pessoa a óbito? Nesse exemplo, ao meu ver, acho mais provável ter sido a diabetes. Provavelmente, na verdade, na maioria dos casos a Covid foi, se muito, um agravante.</p>
+
+<p><strong>Eu não duvido</strong> (eu acredito) que 36.008 pessoas testaram positivo pra Covid-19 e morreram.</p>
+
+<p>Não estou afirmando que apenas 160 pessoas morreram de Covid-19 na Itália.</p>
+
+<p>Mas eu acredito que essas 36.008 pessoas morreram <strong>com</strong> Covid, <strong>não necessariamente de</strong> Covid. Não seria como morrer de câncer, por exemplo. Câncer por si só, na maioria dos casos, é a causa de morte. Não é o que se observa nos casos de Covid.</p>
+
+<p>Ao meu ver, o número de pessoas que <strong>realmente</strong> morreram <strong>de</strong> Covid-19 na Itália foi <strong>algo entre</strong> 160 e 36.008 pessoas. Portanto, 160 seria a estatística mais otimista e 36.008 seria a estatística mais pessimista. E, diante do exposto, muito pessimista, pessimista até demais.</p>
+
+<p>Imagine as pessoas que tinham, além da Covid, <strong>3 ou mais comorbidades</strong>. Não foram todas, é verdade. Mas, no caso dessas pessoas, é correto afirmar que elas morreram <strong>de Covid</strong>?</p>
+
+<h2 id="o-que-esperar-das-estatísticas-anuais">O que esperar das estatísticas anuais?</h2>
+
+<p>Até o momento, no <a href="https://covid.saude.gov.br/">Brasil</a>, tivemos aproximadamente 150 mil mortes com Covid.</p>
+
+<p>Quando saírem as estatísticas de óbitos de todo o ano de 2020 — geralmente saem 2 anos depois, portanto, as deste ano são esperadas para 2022 — provavelmente a Covid estará entre as <a href="/2020/05/17/covid-19-sera-que-tem-relacao-com-infarto-e-avc/">10 principais causas de morte no Brasil</a>.</p>
+
+<p>Mas, por outro lado, possivelmente teremos uma redução nos números de óbitos pelas outras causas. Mais uma vez, lembre-se: na maior parte das mortes ditas “por” Covid, a Covid não foi a única causa. Portanto, se uma pessoa morreu de Covid e diabetes, por exemplo, e foi contabilizada como morte por Covid, logo, é uma morte que deixou de ser contabilizada como sendo morte por diabetes.</p>
+
+<p>Como saber qual seria o certo a se fazer nesse exemplo? O que define que uma morte deve ser contabilizada como Covid ou diabetes?</p>
+
+<div class="alert alert-success alert-update" role="alert">
+    <i class="fas fa-sync-alt" aria-hidden="true"></i> <strong>Atualização (19/02/2021):</strong>
+    <p>De acordo com a Secretaria Municipal de Saúde da cidade de São Paulo, <a href="https://www.band.uol.com.br/noticias/ninguem-morreu-por-dengue-na-cidade-de-sp-em-2020-16323132">não houve mortes por dengue na cidade de São Paulo em 2020</a>. Discordo do repórter da Band que diz que isso é surpreendente. Na minha opinião, isso é altamente improvável, porque todos os anos muitas pessoas morrem por dengue no Brasil todo, inclusive em São Paulo. Não consigo imaginar uma explicação plausível porque em 2020 foi diferente. Para mim, o mais provável é que as mortes por dengue foram contabilizadas como mortes por Covid.</p>
+
+</div>
+
+<h2 id="morte-por-covid-19-ou-por-acidente">Morte por Covid-19? Ou por acidente?</h2>
+
+<p>Veja esse caso: um óbito por acidente de trânsito em <a href="https://pt.wikipedia.org/wiki/Paulistana">Paulistana</a>, no interior do Piauí, foi comunicado oficialmente pela prefeitura como óbito por Covid em <a href="https://www.facebook.com/saudepaulistana.piaui/photos/a.191793221192154/1171415576563242/">12 de agosto</a>. O homem deu entrada no hospital porque apresentava ferimentos graves causados pelo acidente, não porque apresentava sintomas de Covid. Mas fez o teste rápido para Covid, deu positivo, teve sua morte contabilizada como morte por Covid. Seria a primeira, até então, do município.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/10/covid-paulistana.jpg" title="O óbito por acidente de trânsito que foi comunicado oficialmente pela prefeitura como óbito por Covid (fonte: [Secretaria Municipal de Saúde e Meio Ambiente de Paulistana-PI](https://www.facebook.com/saudepaulistana.piaui/photos/a.191793221192154/1171415576563242/))">
+<img src="/files/2020/10/covid-paulistana.jpg" alt="O óbito por acidente de trânsito que foi comunicado oficialmente pela prefeitura como óbito por Covid (fonte: [Secretaria Municipal de Saúde e Meio Ambiente de Paulistana-PI](https://www.facebook.com/saudepaulistana.piaui/photos/a.191793221192154/1171415576563242/))" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+<em class="caption" itemprop="description">
+<p>O óbito por acidente de trânsito que foi comunicado oficialmente pela prefeitura como óbito por Covid (fonte: <a href="https://www.facebook.com/saudepaulistana.piaui/photos/a.191793221192154/1171415576563242/">Secretaria Municipal de Saúde e Meio Ambiente de Paulistana-PI</a>)</p>
+
+</em>
+
+</div>
+
+<p>Dada a repercussão nas redes sociais, a prefeitura lançou uma <a href="https://www.facebook.com/saudepaulistana.piaui/posts/1172182803153186">nota oficial</a> no dia seguinte reafirmando o diagnóstico.  De início, insistiu em afirmar que esse foi o primeiro óbito por Covid no município.</p>
+
+<p>Depois, em <a href="https://www.facebook.com/saudepaulistana.piaui/posts/1172978753073591">14 de agosto</a>, reconsiderou o caso e zerou o contador de óbitos por Covid.</p>
+
+<p>Essa notícia não saiu em veículos de notícias da grade mídia como a Globo, pode pesquisar. Eu, particularmente, fiquei sabendo pelo <a href="https://twitter.com/mariana_lyr/status/1295040570113630208">Twitter</a> e fui atrás de checar as fontes eu mesmo (sim, esse é o <a href="https://pt-br.facebook.com/saudepaulistana.piaui/">perfil oficial da secretaria de saúde do município</a>, há um <em>link</em> para ele no <em>site</em> oficial da secretaria em <a href="http://www.paulistana.pi.gov.br/paulistana/portalnoticias/noticia/novo-coronavirus">www.paulistana.pi.gov.br</a>).</p>
+
+<p>Mostrando esse caso, não quero dizer que todos os óbitos considerados “por” Covid foram assim. Mas esse caso só ganhou destaque e se tornou minimamente conhecido porque repercutiu nas redes sociais. Esse exemplo ativa o alerta do ceticismo. Quantos outros casos assim possivelmente aconteceram no Brasil e no mundo e não ficamos sabendo?</p>
+
+<p>Hoje, <a href="https://www.facebook.com/saudepaulistana.piaui/posts/1219245715113561">9 de outubro</a>, Paulistana, com aproximadamente 20.500 habitantes, contabiliza no total acumulado 167 casos confirmados de Covid, dos quais 152 já se curaram e 2 faleceram.</p>
+
+<div class="alert alert-success alert-update" role="alert">
+    <i class="fas fa-sync-alt" aria-hidden="true"></i> <strong>Atualização (19/02/2021):</strong>
+    <p>Veja esse outro caso: em novembro, na Croácia, um homem que trabalhava em uma construção morreu após cair de uma escada de 10 pés (aproximadamente 3 metros) de altura. Ele sofreu lacerações na testa e hematomas no rosto, cotovelo e mão esquerda. Os médicos foram chamados e correram para o local do acidente, tentaram reanimá-lo, mas ele foi declarado morto ali mesmo. Um teste para coronavírus foi então realizado, conforme exigido pelas diretrizes médicas locais, e deu positivo. Uma autópsia revelou que grande parte dos seus pulmões estava bloqueada. Isso fez com que acadêmicos da Universidade de Zagreb dissessem que a Covid-19 foi o que causou sua queda e que sua morte deveria ser registrada como morte por Covid-19, publicaram até <a href="https://www.sciencedirect.com/science/article/pii/S2665910720300888#bib0015">artigo científico sobre esse caso</a>. O homem também tinha diabetes tipo 2 e era fumante. Fonte: jornal <a href="https://www.dailymail.co.uk/news/article-8958309/Builder-51-died-falling-10ft-ladder-killed-coronavirus.html">Daily Mail</a>, acesso em: 19/02/2021.</p>
+
+</div>
+
+<h2 id="morte-por-covid-ou-por-idade">Morte por Covid? Ou por idade?</h2>
+
+<div class="alert alert-success alert-update" role="alert">
+    <i class="fas fa-sync-alt" aria-hidden="true"></i> <strong>Atualização (14/04/2021):</strong>
+    <p>Adiciono essa seção para contar um caso que soube pelo Iain Davis do <em>site</em> <a href="https://in-this-together.com/">In This Together</a>. Ele compartilha vários dados e notícias que questionam a narrativa da Covid-19. Recomendo que você o siga, caso esse assunto seja do seu interesse.</p>
+
+</div>
+
+<p>Uma matéria publicada no jornal <a href="https://www.dailymail.co.uk/news/article-9279767/BEL-MOONEY-dad-died-chronic-illness-hes-officially-Covid-victim.html">Daily Mail</a> relata um caso que aconteceu na Inglaterra.</p>
+
+<p>O senhor Ted Mooney, um idoso que já sofria de doença pulmonar obstrutiva crônica (DPOC) e demência vascular, se mudou para um asilo em 5 de janeiro de 2021. O asilo foi escolhido pela família por não ter tido nenhum caso de Covid-19 em 2020. Dias antes, o senhor Ted fez um teste para Covid-19, que resultou negativo. Também dias antes, ele completou 99 anos. Ele fez outros dois testes, ambos negativos, em 12 e 26 de janeiro. E se recusou a se vacinar.</p>
+
+<p>No dia 27 de janeiro, houve notícia de um surto de Covid-19 entre os funcionários e residentes do asilo. A partir daí, a família passou a estar em constante contato por telefone com funcionários do asilo, que informavam que o senhor Ted passava a maior parte do tempo no seu quarto, dormindo muito e sem querer comer.</p>
+
+<p>No dia 8 de fevereiro, ele estava resfriado, no que o asilo chamou um clínico geral. Ele quis fazer novo teste para Covid, mas o idoso não quis. O médico prescreveu antibióticos e ele foi quieto para a cama no início da tarde. Mas não levantou mais. Na manhã do dia seguinte, 9 de fevereiro, o asilo ligou para a família para comunicar que o senhor Ted morreu dormindo.</p>
+
+<p>À noite, o médico ligou para a família. Informou que, exceto pelo resfriado, o senhor aparentava estar bem cuidado. No entanto, ao ser questionado qual causa de morte foi informada no atestado de óbito, ele respondeu: Covid-19.</p>
+
+<p>O médico explicou que houve outras mortes por Covid-19 no mesmo andar, então consideraram razoável supor que a morte dele também foi por Covid-19, no que a família protestou: “<strong>uma suposição não é um diagnóstico</strong>”. As demais condições de saúde do idoso também foram registradas no atestado, mas como causas secundárias — lembremos: ele tinha 99 anos e já sofria de doença pulmonar obstrutiva crônica e demência vascular.</p>
+
+<p>Não houve sintoma específico de Covid-19. Não houve teste positivo para Covid-19. Mas mesmo assim, ele entrou pras estatísticas de mortes <strong>por</strong> Covid-19.</p>
+
+<p>A <a href="https://www.dailymail.co.uk/news/article-9279767/BEL-MOONEY-dad-died-chronic-illness-hes-officially-Covid-victim.html">matéria do Daily Mail</a> faz duras críticas à forma como o governo britânico tem contabilizado casos e óbitos e lidado com a pandemia.</p>
+
+<h2 id="existem-muitos-brasileiros-sem-cpf">Existem muitos brasileiros sem CPF?</h2>
+
+<div class="alert alert-success alert-update" role="alert">
+    <i class="fas fa-sync-alt" aria-hidden="true"></i> <strong>Atualização (16/04/2021):</strong>
+    <p>Achei interessante adicionar essa seção.</p>
+
+</div>
+
+<p>Eu acho no mínimo curioso como <a href="https://exame.com/brasil/casos-de-coronavirus-numero-de-mortes-24-de-marco-de-2021/">o Ministério da Saúde começou a exigir CPF para registrar óbitos por Covid-19</a> e <a href="https://istoe.com.br/numero-de-obitos-pela-covid-cai-em-sp-apos-ministerio-da-saude-mudar-sistema/">no mesmo dia o número de óbitos reduziu</a>. Depois de ser <a href="https://g1.globo.com/bemestar/coronavirus/noticia/2021/03/24/secretarias-dizem-que-ministerio-aceitou-pedido-e-voltou-atras-em-alteracoes-no-sistema-sobre-mortes-por-covid.ghtml">criticado pelas Secretarias de Saúde municipais e estaduais</a>, o Ministério da Saúde voltou atrás da decisão e os números voltaram ao patamar de antes. Agências de <em>fact checking</em> (ou seria “<em>left checking</em>”?) dizem que <a href="https://www.aosfatos.org/noticias/nao-e-verdade-que-exigencia-de-cpf-em-notificacao-de-morte-fez-cair-obitos-por-covid-19/">isso não é um sinal de que os números estavam inflados</a>. Eu penso que, sendo verdadeiros os números, uma auditoria não faria mal para confirmá-los.</p>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Não se trata de negacionismo. Não estou dizendo que o vírus não existe, ou que não mata, ou que não houve 150 mil mortes <strong>com</strong> Covid no Brasil. Meu questionamento não é com relação aos números em si, mas à <strong>interpretação</strong> deles. Morrer <strong>por</strong> Covid é <strong>muito raro</strong>. Essa nova doença não é mais mortal que outras que já existiam antes dela. Justifica termos adotado todas essas medidas? Pior: há justificativa para ainda estarmos presos a elas, meses depois?</p>
+
+<p>Eu sou muito a favor do que é razoável. Talvez no primeiro mês da doença recém chegada ao Brasil fosse razoável todos correrem para suas casas. Mas já estamos nisso há meses, já temos informações sobre a doença, não é mais razoável continuarmos.</p>
+
+<p>O remédio não pode ser pior que a doença. Muito se fala nos danos à economia, mas esses não são os únicos efeitos colaterais dessas medidas, pesquise você mesmo: <a href="https://www.google.com/search?q=covid+ansiedade">ansiedade</a>, <a href="https://www.google.com/search?q=covid+depressão">depressão</a>, <a href="https://www.google.com/search?q=covid+suicídio">suicídio</a> têm aumentado com o isolamento social (<em>links</em> para busca no Google).</p>
+
+<p>Sabe o que é mais irônico? Esses casos de suicídio, se testados positivos para a Covid, provavelmente entram para a conta da Covid também.</p>
+
+<p>Outra coisa que aumentou durante essa pandemia foi a <a href="/2020/10/01/covid-19-dos-que-contrairam-86-por-cento-ja-se-recuperaram/">audiência do Jornal Nacional</a>. É revoltante ver como a mídia tem usado essas vítimas para promover o terror, o medo, o sensacionalismo e aumentar sua audiência. Mas não tem problema não: <a href="/2020/10/01/covid-19-dos-que-contrairam-86-por-cento-ja-se-recuperaram/">o número de recuperados aumentou</a> e a audiência <a href="https://noticiasdatv.uol.com.br/noticia/televisao/telejornais-da-globo-perdem-toda-audiencia-conquistada-com-pandemia-40362">diminuiu</a>. As pessoas estão percebendo que não é o fim do mundo e se cansando de assistir a todo esse espetáculo feito em torno da morte.</p>
+
+<p>Após quase 8 meses de pandemia no Brasil, Paulistana tem 20.500 habitantes e 2 óbitos. Te parece razoável que essas pessoas ainda recebem recomendação para ficar em casa, manter distanciamento social e usar máscara na rua? Não fazer isso seria desrespeitoso com a memória dos que faleceram? Quando debateremos o desrespeito com os vivos que, paradoxalmente, para não morrerem, estão sendo impedidos de viverem suas vidas?</p>
+
+
+        </div>
+
+        
+            <!-- AddThis Sharing Buttons -->
+            <div class="gap"></div>
+            <h2>Gostou? Que tal compartilhar?</h2>
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                <a class="addthis_button_telegram"></a>
+                <a class="addthis_button_email"></a>
+                <a class="addthis_button_favorites"></a>
+                <a class="addthis addthis_button_print"></a>
+                <a class="addthis_button_pdfonline"></a>
+                <a class="addthis_button_compact"></a>
+                <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <!-- AddThis Sharing Buttons End -->
+        
+
+        
+            <!-- Disqus -->
+            <div class="gap"></div>
+            <h2>Comentários</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = 'https://cabecalivre.com/2020/10/09/covid-19-sera-que-os-numeros-estao-inflados/';
+                };
+
+                (function() {
+                    var d = document, s = d.createElement('script');
+
+                    s.src = '//cabecalivrecom.disqus.com/embed.js';
+
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>
+                <p><a href="http://www.enable-javascript.com/pt/" target="_blank">Habilite o JavaScript</a> para ver os <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários providos pelo Disqus</a>.</p>
+            </noscript>
+            <!-- Disqus End -->
+        
+    </article>
+</div><!-- .blog-post -->
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card mb-3" id="about">
+    <div class="card-header">
+        <h3><a name="about"></a>Sobre</h3>
+    </div>
+    <div class="card-body" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <p class='text-center' itemprop='logo' itemscope itemtype='http://schema.org/ImageObject'>
+            <a href='https://cabecalivre.com/cabecalivre.png' itemprop='url'>
+                <img src='https://cabecalivre.com/cabecalivre.png' class='img-fluid img-thumbnail rounded-circle'>
+            </a>
+            <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+            <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+        </p>
+        <p class="lead text-center">
+            <a href="https://cabecalivre.com" itemprop="url">
+                <span itemprop="name">Cabeça Livre</span>
+            </a>
+        </p>
+        <p class="text-center" itemprop="description">
+            Propagando ideias de liberdade.
+        </p>
+        <!-- Follow Buttons -->
+<div class="follow-buttons text-center">
+    
+        <a class="btn btn-facebook" href="https://facebook.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    
+    
+        <a class="btn btn-twitter" href="https://twitter.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-twitter"></i>
+        </a>
+    
+    
+        <a class="btn btn-instagram" href="https://instagram.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-instagram"></i>
+        </a>
+    
+    
+        <a class="btn btn-youtube" href="https://youtube.com/channel/UCvy3zgcREgyeo8LY2vdPxmw" itemprop="sameAs" role="button">
+            <i class="fab fa-youtube"></i>
+        </a>
+    
+    
+        <a class="btn btn-telegram" href="https://t.me/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+    
+    
+        <a class="btn btn-gab" href="https://gab.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="gab fa-gab-g"></i>
+        </a>
+    
+    
+        <a class="btn btn-gettr" href="https://gettr.com/user/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="gettr fa-gettr"></i>
+        </a>
+    
+    
+        <a class="btn btn-parler" href="https://parler.com/#/user/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="parler fa-parler"></i>
+        </a>
+    
+    
+    
+    
+    
+    <a class="btn btn-rss" href="/feed.xml" role="button">
+        <i class="fas fa-rss"></i>
+    </a>
+</div>
+<!-- Follow Buttons End -->
+
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+<div class="card mb-3" id="author">
+    <div class="card-header">
+        <h3><a name="author"></a>Autor</h3>
+    </div>
+    <div class="card-body" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <p class="text-center">
+            <a href='https://cabecalivre.com/daniel-peterson.jpg' itemprop='url'>
+                <img src='https://cabecalivre.com/daniel-peterson.jpg' class='img-fluid img-thumbnail rounded-circle' style='max-width: 150px'>
+            </a>
+        </p>
+        
+            <p class="lead text-center" itemprop="name">
+                Daniel Peterson
+            </p>
+        
+        <p>Pseudônimo. Uma homenagem a <a href="https://www.youtube.com/c/DanielFragaBR">Daniel Fraga</a> e <a href="https://www.youtube.com/channel/UCLTWPE7XrHEe8m_xAmNbQ-Q">Peter Turguniev</a>, os dois maiores libertários do Brasil, e também a <a href="/2021/08/16/a-regra-mais-importante-para-a-vida-segundo-jordan-peterson/">Jordan Peterson</a>, psicólogo que sigo e admiro.</p>
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h3>Anúncio</h3>
+    </div>
+    <div class="card-body">
+        
+<!-- A-ADS Begin -->
+<iframe data-aa="1673147" src="//acceptable.a-ads.com/1673147" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<!-- A-ADS End -->
+
+
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h3>Apoie</h3>
+    </div>
+    <div class="card-body">
+        <p>Ajude este <em>site</em> tornando-se um patrocinador, agradeço qualquer contribuição!</p>
+        <p class='text-center'><a href='https://www.padrim.com.br/CabecaLivreCom' title='Padrim' target='_blank'>
+            <img src='/assets/img/padrim.jpg' alt='Padrim' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'>
+        </a></p>
+        <p class='text-center'><a href='https://www.padrim.com.br/CabecaLivreCom' title='Padrim' target='_blank'>Padrim</a></p>
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h3>Serviços</h3>
+    </div>
+    <div class="card-body">
+        <p class='text-center'><a href='/servico-de-descarte-de-bitcoins' title='Descarte de bitcoins'>
+            <img src='/assets/img/descarte-de-bitcoins.png' alt='Descarte de bitcoins' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'>
+        </a></p>
+        <p class='text-center'><a href='/servico-de-descarte-de-bitcoins' title='Descarte de bitcoins'>Descarte de bitcoins</a></p>
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+    <div class="container">
+        Copyleft 2022 <a href='#author'>Daniel Peterson</a>. Todos os direitos liberados.
+    </div>
+</footer>
+
+<meta itemprop="description" content="Você lembra do que o Dr. Drauzio Varella já explicava no Fantástico em março, no início da pandemia no Brasil, que para a maioria das pessoas os sintomas da Covid seriam leves, semelhantes aos de um resfriado? Ele não estava errado. Hoje, temos dados que confirmam sua afirmação feita lá atrás.">
+
+
+    <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="url" content="https://cabecalivre.com/files/2020/10/covid-paulistana.jpg"/>
+        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+    </div>
+
+
+
+    <meta itemprop="inLanguage" content="pt"/>
+
+
+
+    <!-- Disqus -->
+    <script id="dsq-count-scr" src="//cabecalivrecom.disqus.com/count.js" async></script>
+    <!-- Disqus End -->
+
+
+
+    <!-- Google AdSense -->
+    
+
+    <script type="text/javascript">
+        adsbygoogle = window.adsbygoogle || [];
+
+        $(document).ready(function(){
+            
+            $('.adsbygoogle').each(function(index, element){
+                adsbygoogle.push({});
+            });
+        });
+    </script>
+    <!-- Google AdSense End -->
+
+
+
+            
+        </main>
+    </div><!-- .bmd-layout-container -->
+</body>
+</html>

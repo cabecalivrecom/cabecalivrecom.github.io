@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: cabecalivre.com
+Token: bae06248438a01f848feca4a9dfb9397e538f03295d65a1f7b9a84e5d0b4f343

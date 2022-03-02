@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="pt" prefix="
+    addthis: http://www.addthis.com/help/api-spec
+    og: http://ogp.me/ns#
+    fb: http://ogp.me/ns/fb#
+    article: http://ogp.me/ns/article#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+        <script type="text/javascript">
+            if (("cabecalivre.com" == window.location.host) && (window.location.protocol != "https:")) {
+                window.location = window.location.toString().replace(/^http:/, "https:");
+            }
+        </script>
+    
+
+    <title>Cabeça Livre - Cabeça Livre</title>
+    <meta name="author" content="Daniel Peterson">
+    <meta name="description" content="Propagando ideias de liberdade.">
+    <link rel="canonical" href="https://cabecalivre.com/">
+    <link rel="alternate" type="application/rss+xml" title="Cabeça Livre" href="https://cabecalivre.com/feed.xml" />
+
+    <!-- OpenSearch -->
+    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar em Cabeça Livre" href="https://cabecalivre.com/opensearch.xml" />
+
+    <!-- Open Graph -->
+    
+    
+    
+    <meta property="og:description" content="Propagando ideias de liberdade." />
+    
+    
+        <meta property="og:image" content="https://cabecalivre.com/cabecalivre.png" />
+    
+    <meta property="og:site_name" content="Cabeça Livre" />
+    <meta property="og:title" content="Cabeça Livre" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cabecalivre.com/" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@CabecaLivreCom" />
+    
+
+    <!-- Favicons (made with RealFaviconGenerator.net) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cabecalivre.com/apple-touch-icon.png?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cabecalivre.com/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cabecalivre.com/favicon-16x16.png?v=4">
+    <link rel="manifest" href="https://cabecalivre.com/site.webmanifest?v=4">
+    <link rel="mask-icon" href="https://cabecalivre.com/safari-pinned-tab.svg?v=4" color="#424242">
+    <link rel="shortcut icon" href="https://cabecalivre.com/favicon.ico?v=4">
+    <meta name="msapplication-TileColor" content="#424242">
+    <meta name="theme-color" content="#424242">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="/libs/bootstrap-material-design/4.1.2/custom/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    
+
+    <!-- Fonte Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- JS -->
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.16.1-lts/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.js" integrity="sha256-GaerX2a/DuOnPrxn/4vH13dobiFUe/27LO6gCZDNauA=" crossorigin="anonymous"></script>
+    
+    <script src="/libs/font-awesome-gab-parler/0.3.0/js/font-awesome-gab-parler.js"></script>
+    <script src="//inc.freefind.com/inc/ffse-overlay.min.js" async></script>
+    <script src="/assets/js/main.js"></script>
+
+    
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65333685-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-65333685-6');
+        </script>
+        <!-- End Google Analytics -->
+    
+
+    
+        <!-- Google AdSense -->
+        <script data-ad-client="ca-pub-5193467168351289" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+    
+        <!-- AddThis -->
+        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec0947574225d87"></script>
+        <script type="text/javascript">
+            var addthis_config = {
+                data_track_clickback: true,
+                data_track_addressbar: true,
+                ui_language: 'pt'
+            };
+            var addthis_share = {
+                url: 'https://cabecalivre.com/index.html',
+                title: document.title,
+                description: 'Propagando ideias de liberdade.'
+            };
+        </script>
+        <!-- End AddThis -->
+    
+</head>
+
+
+<body itemscope itemtype="http://schema.org/WebPage">
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+        <!-- Fixed navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-toggle="drawer" data-target="#drawer">
+            <span class="sr-only">Exibir/esconder navegação</span>
+            <i class="material-icons">menu</i>
+        </button>
+
+        <a class="navbar-brand" href="/">Cabeça Livre</a>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav m-auto">
+                <!--
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/archive/">Archive</a>
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                -->
+            </ul>
+            <form class="form-inline" id="navbar-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                <input type="hidden" name="si" value="28330050">
+        		<input type="hidden" name="pid" value="r">
+        		<input type="hidden" name="n" value="0">
+        		<input type="hidden" name="_charset_" value="">
+        		<input type="hidden" name="bcd" value="&#247;">
+        		<input type="hidden" name="lang" value="pt">
+                <div class="input-group">
+                    <input class="form-control search-field" id="navbar-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary btn-number search-button" id="navbar-search-button" type="submit" value="search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div><!--#navbar-->
+    </div><!--.container-->
+</nav>
+
+        <!-- Navigation drawer -->
+<div id="drawer" class="bmd-layout-drawer bg-faded">
+    <header>
+        <a class="navbar-brand" href="/">Cabeça Livre</a>
+    </header>
+    <form class="form-inline border-top" id="drawer-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+        <input type="hidden" name="si" value="28330050">
+        <input type="hidden" name="pid" value="r">
+        <input type="hidden" name="n" value="0">
+        <input type="hidden" name="_charset_" value="">
+        <input type="hidden" name="bcd" value="&#247;">
+        <input type="hidden" name="lang" value="pt">
+        <div class="bmd-form-group-sm">
+            <div class="input-group">
+                <input class="form-control search-field" id="drawer-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary btn-number search-button" id="drawer-search-button" type="submit" value="search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div><!-- .input-group -->
+        </div><!-- .bmd-form-group-sm -->
+    </form>
+    <ul class="list-group list-group-flush border-top" id="drawer-links">
+        
+            
+                
+            
+                
+            
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/archive/">Archive</a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    </ul>
+</div>
+
+
+        <main class="bmd-layout-content">
+            <div class="container" id="main-container">
+                <div class="row">
+                    <div class='col-sm-8'>
+                        <meta itemprop="headline name" content="Cabeça Livre">
+<link href="https://cabecalivre.com/" itemprop="url">
+
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/02/22/pseudopandemia-capitulo-4-nos-mantendo-seguros/" itemprop="mainEntityOfPage url">
+                    Pseudopandemia - Capítulo 4 - Nos Mantendo Seguros
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-02-22">
+                        <a href="/2022/02/22/">
+                            22 de
+                            
+                            Fevereiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/02/22/pseudopandemia-capitulo-4-nos-mantendo-seguros/" addthis:title="Pseudopandemia - Capítulo 4 - Nos Mantendo Seguros" addthis:description="A maioria das pessoas que trabalharam para as organizações que foram cúmplices da fraude pseudopandêmica eram influenciadores inconscientes ou outros profissionais comprometidos que realmente acreditavam que seu trabalho era benéfico. Apenas os conspiradores centrais e seus influenciadores informados imediatos queriam causar danos e criar caos econômico, político e social. Isso era necessário para liderar o...">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/02/22/pseudopandemia-capitulo-4-nos-mantendo-seguros/'>
+                            <img src='https://cabecalivre.com/files/2022/02/pseudopandemia-nova-arte-horizontal.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">A maioria das pessoas que trabalharam para as organizações que foram cúmplices da fraude pseudopandêmica eram influenciadores inconscientes ou outros profissionais comprometidos que realmente acreditavam que seu trabalho era benéfico. Apenas os conspiradores centrais e seus influenciadores informados imediatos queriam causar danos e criar caos econômico, político e social. Isso era necessário para liderar o...</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/02/22/pseudopandemia-capitulo-4-nos-mantendo-seguros/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/02/22/pseudopandemia-capitulo-4-nos-mantendo-seguros/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+                <div class="row">
+                    <div class="col-12">
+                        
+<!-- A-ADS Begin -->
+<iframe data-aa="1673143" src="//acceptable.a-ads.com/1673143" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<!-- A-ADS End -->
+
+
+                    </div>
+                </div>
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/02/14/pseudopandemia-capitulo-3-quem-se-importa-com-o-risco/" itemprop="mainEntityOfPage url">
+                    Pseudopandemia - Capítulo 3 - Quem se Importa com o Risco?
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-02-14">
+                        <a href="/2022/02/14/">
+                            14 de
+                            
+                            Fevereiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/02/14/pseudopandemia-capitulo-3-quem-se-importa-com-o-risco/" addthis:title="Pseudopandemia - Capítulo 3 - Quem se Importa com o Risco?" addthis:description="Para que qualquer jurado fique convencido, além de qualquer dúvida razoável, de que um criminoso é culpado, a evidência deve convencê-lo de que o acusado tinha os meios, o motivo e a oportunidade para cometer o crime. À medida que continuamos a explorar os principais mecanismos que facilitaram a pseudopandemia, precisamos considerar se os conspiradores...">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/02/14/pseudopandemia-capitulo-3-quem-se-importa-com-o-risco/'>
+                            <img src='https://cabecalivre.com/files/2022/02/pseudopandemia-nova-arte-horizontal.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">Para que qualquer jurado fique convencido, além de qualquer dúvida razoável, de que um criminoso é culpado, a evidência deve convencê-lo de que o acusado tinha os meios, o motivo e a oportunidade para cometer o crime. À medida que continuamos a explorar os principais mecanismos que facilitaram a pseudopandemia, precisamos considerar se os conspiradores...</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/02/14/pseudopandemia-capitulo-3-quem-se-importa-com-o-risco/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/02/14/pseudopandemia-capitulo-3-quem-se-importa-com-o-risco/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/02/06/pseudopandemia-capitulo-2-parcerias-publico-privadas-globais/" itemprop="mainEntityOfPage url">
+                    Pseudopandemia - Capítulo 2 - Parcerias Público-Privadas Globais
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-02-06">
+                        <a href="/2022/02/06/">
+                            06 de
+                            
+                            Fevereiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/02/06/pseudopandemia-capitulo-2-parcerias-publico-privadas-globais/" addthis:title="Pseudopandemia - Capítulo 2 - Parcerias Público-Privadas Globais" addthis:description="À medida em que avançarmos nessa investigação, analisaremos detalhadamente as evidências que expõem a pseudopandemia. No entanto, primeiro precisamos compreender os princípios gerais que a tornaram possível.">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/02/06/pseudopandemia-capitulo-2-parcerias-publico-privadas-globais/'>
+                            <img src='https://cabecalivre.com/files/2022/02/pseudopandemia-nova-arte-horizontal.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">À medida em que avançarmos nessa investigação, analisaremos detalhadamente as evidências que expõem a pseudopandemia. No entanto, primeiro precisamos compreender os princípios gerais que a tornaram possível.</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/02/06/pseudopandemia-capitulo-2-parcerias-publico-privadas-globais/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/02/06/pseudopandemia-capitulo-2-parcerias-publico-privadas-globais/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/01/31/pseudopandemia-capitulo-1-pseudopandemia/" itemprop="mainEntityOfPage url">
+                    Pseudopandemia - Capítulo 1 - Pseudopandemia
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-01-31">
+                        <a href="/2022/01/31/">
+                            31 de
+                            
+                            Janeiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/01/31/pseudopandemia-capitulo-1-pseudopandemia/" addthis:title="Pseudopandemia - Capítulo 1 - Pseudopandemia" addthis:description="A COVID-19 foi uma pseudopandemia. O nível de ameaça sugerido por aqueles que comandavam a operação psicológica era uma mentira. Foi uma fraude projetada para enganar você a abandonar seus direitos e liberdades inalienáveis. O objetivo dos conspiradores centrais era permitir a redefinição (o reset) da economia global, do sistema monetário internacional e sua estrutura...">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/01/31/pseudopandemia-capitulo-1-pseudopandemia/'>
+                            <img src='https://cabecalivre.com/files/2022/02/pseudopandemia-nova-arte-horizontal.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">A COVID-19 foi uma pseudopandemia. O nível de ameaça sugerido por aqueles que comandavam a operação psicológica era uma mentira. Foi uma fraude projetada para enganar você a abandonar seus direitos e liberdades inalienáveis. O objetivo dos conspiradores centrais era permitir a redefinição (o reset) da economia global, do sistema monetário internacional e sua estrutura...</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/01/31/pseudopandemia-capitulo-1-pseudopandemia/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/01/31/pseudopandemia-capitulo-1-pseudopandemia/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/01/31/pseudopandemia-a-tecnocracia-do-novo-normal/" itemprop="mainEntityOfPage url">
+                    Pseudopandemia: a tecnocracia do novo normal
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-01-31">
+                        <a href="/2022/01/31/">
+                            31 de
+                            
+                            Janeiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/01/31/pseudopandemia-a-tecnocracia-do-novo-normal/" addthis:title="Pseudopandemia: a tecnocracia do novo normal" addthis:description="Estamos vivendo uma transformação global. Nossa sociedade, cultura, economia e até mesmo nossa humanidade está passando por um processo de mudança a mando de nossos líderes. Este livro tenta explicar quem são esses líderes, ao que essa transição está nos levando e por que nossos líderes estão nos levando até lá.">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/01/31/pseudopandemia-a-tecnocracia-do-novo-normal/'>
+                            <img src='https://cabecalivre.com/files/2022/02/pseudopandemia-nova-arte-horizontal.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">Estamos vivendo uma transformação global. Nossa sociedade, cultura, economia e até mesmo nossa humanidade está passando por um processo de mudança a mando de nossos líderes. Este livro tenta explicar quem são esses líderes, ao que essa transição está nos levando e por que nossos líderes estão nos levando até lá.</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/01/31/pseudopandemia-a-tecnocracia-do-novo-normal/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/01/31/pseudopandemia-a-tecnocracia-do-novo-normal/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/01/23/narrativa-da-pandemia-sofre-uma-reviravolta-radical/" itemprop="mainEntityOfPage url">
+                    Narrativa da pandemia sofre uma reviravolta radical
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-01-23">
+                        <a href="/2022/01/23/">
+                            23 de
+                            
+                            Janeiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/01/23/narrativa-da-pandemia-sofre-uma-reviravolta-radical/" addthis:title="Narrativa da pandemia sofre uma reviravolta radical" addthis:description="Estaria a pandemia programada para acabar em 1º de março? Estamos realmente olhando para o fim da pandemia de Covid-19? Isso poderia explicar as recentes mudanças vertiginosas nas manchetes, e é a alternativa mais razoável para fins políticos, já que 1º de março é um dia significativo por dois motivos muito importantes.">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/01/23/narrativa-da-pandemia-sofre-uma-reviravolta-radical/'>
+                            <img src='https://cabecalivre.com/files/2022/01/pandemic-narrative-undergoes-radical-u-turn-fb.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">Estaria a pandemia programada para acabar em 1º de março? Estamos realmente olhando para o fim da pandemia de Covid-19? Isso poderia explicar as recentes mudanças vertiginosas nas manchetes, e é a alternativa mais razoável para fins políticos, já que 1º de março é um dia significativo por dois motivos muito importantes.</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/01/23/narrativa-da-pandemia-sofre-uma-reviravolta-radical/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/01/23/narrativa-da-pandemia-sofre-uma-reviravolta-radical/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/01/21/o-verdadeiro-motivo-pelo-qual-querem-dar-vacinas-da-covid-as-criancas/" itemprop="mainEntityOfPage url">
+                    O verdadeiro motivo pelo qual querem dar vacinas da Covid às crianças
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-01-21">
+                        <a href="/2022/01/21/">
+                            21 de
+                            
+                            Janeiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/01/21/o-verdadeiro-motivo-pelo-qual-querem-dar-vacinas-da-covid-as-criancas/" addthis:title="O verdadeiro motivo pelo qual querem dar vacinas da Covid às crianças" addthis:description="Muitos especialistas admitem que crianças não correm risco de ter a forma grave da Covid, ainda assim os pais estão sob pressão para vacinar seus filhos. Se é improvável que crianças fiquem gravemente doentes da Covid, então por que essa campanha para que todas as crianças sejam vacinadas? Será que não tem nada a ver...">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/01/21/o-verdadeiro-motivo-pelo-qual-querem-dar-vacinas-da-covid-as-criancas/'>
+                            <img src='https://cabecalivre.com/files/2022/01/vacinacao-de-crianca.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">Muitos especialistas admitem que crianças não correm risco de ter a forma grave da Covid, ainda assim os pais estão sob pressão para vacinar seus filhos. Se é improvável que crianças fiquem gravemente doentes da Covid, então por que essa campanha para que todas as crianças sejam vacinadas? Será que não tem nada a ver...</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/01/21/o-verdadeiro-motivo-pelo-qual-querem-dar-vacinas-da-covid-as-criancas/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/01/21/o-verdadeiro-motivo-pelo-qual-querem-dar-vacinas-da-covid-as-criancas/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/01/18/pais-podem-perder-a-guarda-dos-filhos-por-nao-submete-los-as-vacinas-experimentais-da-covid/" itemprop="mainEntityOfPage url">
+                    Pais podem perder a guarda dos filhos por não submetê-los às vacinas experimentais da Covid?
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-01-18">
+                        <a href="/2022/01/18/">
+                            18 de
+                            
+                            Janeiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/01/18/pais-podem-perder-a-guarda-dos-filhos-por-nao-submete-los-as-vacinas-experimentais-da-covid/" addthis:title="Pais podem perder a guarda dos filhos por não submetê-los às vacinas experimentais da Covid?" addthis:description="A juíza Ludmila Lins Grilo explica que isso não procede.">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/01/18/pais-podem-perder-a-guarda-dos-filhos-por-nao-submete-los-as-vacinas-experimentais-da-covid/'>
+                            <img src='https://cabecalivre.com/files/2022/01/hasan-almasi-kPWfbe65lb4-unsplash.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">A juíza Ludmila Lins Grilo explica que isso não procede.</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/01/18/pais-podem-perder-a-guarda-dos-filhos-por-nao-submete-los-as-vacinas-experimentais-da-covid/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/01/18/pais-podem-perder-a-guarda-dos-filhos-por-nao-submete-los-as-vacinas-experimentais-da-covid/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/01/14/dr-fauci-admite-que-testes-pcr-nao-sao-capazes-de-indicar-se-uma-infeccao-esta-ativa-ou-se-uma-pessoa-e-contagiosa/" itemprop="mainEntityOfPage url">
+                    Dr. Fauci admite que testes PCR não são capazes de indicar se uma infecção está ativa ou se uma pessoa é contagiosa
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-01-14">
+                        <a href="/2022/01/14/">
+                            14 de
+                            
+                            Janeiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/01/14/dr-fauci-admite-que-testes-pcr-nao-sao-capazes-de-indicar-se-uma-infeccao-esta-ativa-ou-se-uma-pessoa-e-contagiosa/" addthis:title="Dr. Fauci admite que testes PCR não são capazes de indicar se uma infecção está ativa ou se uma pessoa é contagiosa" addthis:description="O CDC dos Estados Unidos está admitindo agora o que especialistas têm dito desde os primeiros dias da pandemia &mdash; você não pode confiar no teste de PCR para dizer se uma infecção está ativa ou se uma pessoa pode transmitir o vírus. Realmente só descobriram isso agora, após quase dois anos nesse jogo?">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/01/14/dr-fauci-admite-que-testes-pcr-nao-sao-capazes-de-indicar-se-uma-infeccao-esta-ativa-ou-se-uma-pessoa-e-contagiosa/'>
+                            <img src='https://cabecalivre.com/files/2022/01/pcr.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">O CDC dos Estados Unidos está admitindo agora o que especialistas têm dito desde os primeiros dias da pandemia &mdash; você não pode confiar no teste de PCR para dizer se uma infecção está ativa ou se uma pessoa pode transmitir o vírus. Realmente só descobriram isso agora, após quase dois anos nesse jogo?</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/01/14/dr-fauci-admite-que-testes-pcr-nao-sao-capazes-de-indicar-se-uma-infeccao-esta-ativa-ou-se-uma-pessoa-e-contagiosa/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/01/14/dr-fauci-admite-que-testes-pcr-nao-sao-capazes-de-indicar-se-uma-infeccao-esta-ativa-ou-se-uma-pessoa-e-contagiosa/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+    
+    <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="card-header">
+            <h2 class="blog-post-title" itemprop="headline name">
+                <a class="blog-post-link" href="/2022/01/12/ceo-da-pfizer-diz-que-2-doses-oferecem-protecao-muito-limitada-se-alguma-contra-a-nova-variante-da-covid/" itemprop="mainEntityOfPage url">
+                    CEO da Pfizer diz que 2 doses &quot;oferecem proteção muito limitada, se alguma&quot; contra a nova variante da Covid
+                </a>
+            </h2>
+            <div class="blog-post-meta row">
+                <div class='col-sm-6'>
+                    <p class="blog-post-date" itemprop="datePublished" content="2022-01-12">
+                        <a href="/2022/01/12/">
+                            12 de
+                            
+                            Janeiro
+                            
+                            de 2022
+                        </a>
+                    </p>
+                    <meta itemprop="dateModified" content="2022-02-07" />
+                </div>
+                <div class='col-sm-6'>
+                    
+                        <div class='blog-post-share'>
+                            <!-- AddThis Sharing Buttons -->
+                            <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2022/01/12/ceo-da-pfizer-diz-que-2-doses-oferecem-protecao-muito-limitada-se-alguma-contra-a-nova-variante-da-covid/" addthis:title="CEO da Pfizer diz que 2 doses &quot;oferecem proteção muito limitada, se alguma&quot; contra a nova variante da Covid" addthis:description="Um regime de duas doses da vacina contra Covid da Pfizer oferece &quot;proteção muito limitada, se alguma&quot; contra a variante Omicron, disse o CEO da Pfizer, Albert Bourla, na segunda-feira, durante uma entrevista ao programa &quot;Squawk Box&quot; da CNBC.">
+                                <a class="addthis_button_facebook"></a>
+                                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                                <a class="addthis_button_telegram"></a>
+                                <a class="addthis_button_favorites"></a>
+                                <a class="addthis_button_compact"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                            </div>
+                            <!-- AddThis Sharing Buttons End -->
+                        </div><!-- .blog-post-share -->
+                    
+                </div><!-- .col-sm-6 -->
+                
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        
+                            <meta itemprop="name" content="Daniel Peterson">
+                        
+                        
+                        
+                    </div>
+                
+                
+                    <meta itemprop="inLanguage" content="pt"/>
+                
+                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Cabeça Livre" />
+                    <meta itemprop="url" content="https://cabecalivre.com" />
+                    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png" />
+                        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                    </div>
+                </div>
+            </div><!-- .blog-post-meta -->
+        </div><!-- .card-header -->
+        <div class="blog-post-content card-body">
+            <div class="row">
+                
+                <div class='col-sm-4' itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+                    <p class='text-center'>
+                        <a href='/2022/01/12/ceo-da-pfizer-diz-que-2-doses-oferecem-protecao-muito-limitada-se-alguma-contra-a-nova-variante-da-covid/'>
+                            <img src='https://cabecalivre.com/files/2022/01/Pfizer-CEO-Covid-vaccine-failure-feature.jpg' class='img-fluid img-thumbnail' itemprop="url">
+                        </a>
+                    </p>
+                    <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+                    <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+                </div>
+                <div class="col-sm-8">
+                
+                    <p itemprop="description">Um regime de duas doses da vacina contra Covid da Pfizer oferece &quot;proteção muito limitada, se alguma&quot; contra a variante Omicron, disse o CEO da Pfizer, Albert Bourla, na segunda-feira, durante uma entrevista ao programa &quot;Squawk Box&quot; da CNBC.</p>
+                    
+                        <a class='btn btn-primary float-left' href="/2022/01/12/ceo-da-pfizer-diz-que-2-doses-oferecem-protecao-muito-limitada-se-alguma-contra-a-nova-variante-da-covid/#disqus_thread">Comentários</a>
+                    
+                    <a class='btn btn-primary float-right' href="/2022/01/12/ceo-da-pfizer-diz-que-2-doses-oferecem-protecao-muito-limitada-se-alguma-contra-a-nova-variante-da-covid/">
+                        Leia mais &rsaquo;
+                    </a>
+                </div>
+            </div><!-- .row -->
+
+            
+
+            
+
+            
+
+        </div><!-- .blog-post-content -->
+    </div><!-- .blog-post -->
+
+
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            
+                <li class="disabled latest page-item">
+                    <span class="page-link">
+                        &laquo;<span class="hidden-xs"> Primeira</span>
+                    </span>
+                </li>
+                <li class="disabled page-item">
+                    <span class="page-link">
+                        &lsaquo;<span class="hidden-xs"> Anterior</span>
+                    </span>
+                </li>
+            
+            
+                <li class="page-item">
+                    <a class="page-link" href="/pagina/2/" aria-label="Próxima">
+                        <span class="hidden-xs">Próxima </span>&rsaquo;
+                    </a>
+                </li>
+                <li class="earliest page-item">
+                    <a class="page-link" href="/pagina/11/" aria-label="Última">
+                        <span class="hidden-xs">Última </span>&raquo;
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card mb-3" id="about">
+    <div class="card-header">
+        <h3><a name="about"></a>Sobre</h3>
+    </div>
+    <div class="card-body" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <p class='text-center' itemprop='logo' itemscope itemtype='http://schema.org/ImageObject'>
+            <a href='https://cabecalivre.com/cabecalivre.png' itemprop='url'>
+                <img src='https://cabecalivre.com/cabecalivre.png' class='img-fluid img-thumbnail rounded-circle'>
+            </a>
+            <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+            <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+        </p>
+        <p class="lead text-center">
+            <a href="https://cabecalivre.com" itemprop="url">
+                <span itemprop="name">Cabeça Livre</span>
+            </a>
+        </p>
+        <p class="text-center" itemprop="description">
+            Propagando ideias de liberdade.
+        </p>
+        <!-- Follow Buttons -->
+<div class="follow-buttons text-center">
+    
+        <a class="btn btn-facebook" href="https://facebook.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    
+    
+        <a class="btn btn-twitter" href="https://twitter.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-twitter"></i>
+        </a>
+    
+    
+        <a class="btn btn-instagram" href="https://instagram.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-instagram"></i>
+        </a>
+    
+    
+        <a class="btn btn-youtube" href="https://youtube.com/channel/UCvy3zgcREgyeo8LY2vdPxmw" itemprop="sameAs" role="button">
+            <i class="fab fa-youtube"></i>
+        </a>
+    
+    
+        <a class="btn btn-telegram" href="https://t.me/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+    
+    
+        <a class="btn btn-gab" href="https://gab.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="gab fa-gab-g"></i>
+        </a>
+    
+    
+        <a class="btn btn-gettr" href="https://gettr.com/user/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="gettr fa-gettr"></i>
+        </a>
+    
+    
+        <a class="btn btn-parler" href="https://parler.com/#/user/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="parler fa-parler"></i>
+        </a>
+    
+    
+    
+    
+    
+    <a class="btn btn-rss" href="/feed.xml" role="button">
+        <i class="fas fa-rss"></i>
+    </a>
+</div>
+<!-- Follow Buttons End -->
+
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+<div class="card mb-3" id="author">
+    <div class="card-header">
+        <h3><a name="author"></a>Autor</h3>
+    </div>
+    <div class="card-body" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <p class="text-center">
+            <a href='https://cabecalivre.com/daniel-peterson.jpg' itemprop='url'>
+                <img src='https://cabecalivre.com/daniel-peterson.jpg' class='img-fluid img-thumbnail rounded-circle' style='max-width: 150px'>
+            </a>
+        </p>
+        
+            <p class="lead text-center" itemprop="name">
+                Daniel Peterson
+            </p>
+        
+        <p>Pseudônimo. Uma homenagem a <a href="https://www.youtube.com/c/DanielFragaBR">Daniel Fraga</a> e <a href="https://www.youtube.com/channel/UCLTWPE7XrHEe8m_xAmNbQ-Q">Peter Turguniev</a>, os dois maiores libertários do Brasil, e também a <a href="/2021/08/16/a-regra-mais-importante-para-a-vida-segundo-jordan-peterson/">Jordan Peterson</a>, psicólogo que sigo e admiro.</p>
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h3>Anúncio</h3>
+    </div>
+    <div class="card-body">
+        
+<!-- A-ADS Begin -->
+<iframe data-aa="1673147" src="//acceptable.a-ads.com/1673147" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<!-- A-ADS End -->
+
+
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h3>Apoie</h3>
+    </div>
+    <div class="card-body">
+        <p>Ajude este <em>site</em> tornando-se um patrocinador, agradeço qualquer contribuição!</p>
+        <p class='text-center'><a href='https://www.padrim.com.br/CabecaLivreCom' title='Padrim' target='_blank'>
+            <img src='/assets/img/padrim.jpg' alt='Padrim' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'>
+        </a></p>
+        <p class='text-center'><a href='https://www.padrim.com.br/CabecaLivreCom' title='Padrim' target='_blank'>Padrim</a></p>
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h3>Serviços</h3>
+    </div>
+    <div class="card-body">
+        <p class='text-center'><a href='/servico-de-descarte-de-bitcoins' title='Descarte de bitcoins'>
+            <img src='/assets/img/descarte-de-bitcoins.png' alt='Descarte de bitcoins' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'>
+        </a></p>
+        <p class='text-center'><a href='/servico-de-descarte-de-bitcoins' title='Descarte de bitcoins'>Descarte de bitcoins</a></p>
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+    <div class="container">
+        Copyleft 2022 <a href='#author'>Daniel Peterson</a>. Todos os direitos liberados.
+    </div>
+</footer>
+
+<meta itemprop="description" content="Propagando ideias de liberdade.">
+
+
+    <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="url" content="https://cabecalivre.com/cabecalivre.png"/>
+        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+    </div>
+
+
+
+    <meta itemprop="inLanguage" content="pt"/>
+
+
+
+    <!-- Disqus -->
+    <script id="dsq-count-scr" src="//cabecalivrecom.disqus.com/count.js" async></script>
+    <!-- Disqus End -->
+
+
+
+    <!-- Google AdSense -->
+    
+
+    <script type="text/javascript">
+        adsbygoogle = window.adsbygoogle || [];
+
+        $(document).ready(function(){
+            
+            $('.adsbygoogle').each(function(index, element){
+                adsbygoogle.push({});
+            });
+        });
+    </script>
+    <!-- Google AdSense End -->
+
+
+
+            
+        </main>
+    </div><!-- .bmd-layout-container -->
+</body>
+</html>

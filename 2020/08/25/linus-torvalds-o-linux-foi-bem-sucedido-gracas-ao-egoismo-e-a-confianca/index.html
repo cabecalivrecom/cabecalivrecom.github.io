@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="pt" prefix="
+    addthis: http://www.addthis.com/help/api-spec
+    og: http://ogp.me/ns#
+    fb: http://ogp.me/ns/fb#
+    article: http://ogp.me/ns/article#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+        <script type="text/javascript">
+            if (("cabecalivre.com" == window.location.host) && (window.location.protocol != "https:")) {
+                window.location = window.location.toString().replace(/^http:/, "https:");
+            }
+        </script>
+    
+
+    <title>Linus Torvalds: o Linux foi bem-sucedido graças ao egoísmo e à confiança - Cabeça Livre</title>
+    <meta name="author" content="Daniel Peterson">
+    <meta name="description" content="O criador do Linux, Linus Torvalds, ganhou o Prêmio de Tecnologia do Milênio e um cheque de 600.000 euros da Academia de Tecnologia da Finlândia. Ele foi ind...">
+    <link rel="canonical" href="https://cabecalivre.com/2020/08/25/linus-torvalds-o-linux-foi-bem-sucedido-gracas-ao-egoismo-e-a-confianca/">
+    <link rel="alternate" type="application/rss+xml" title="Cabeça Livre" href="https://cabecalivre.com/feed.xml" />
+
+    <!-- OpenSearch -->
+    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar em Cabeça Livre" href="https://cabecalivre.com/opensearch.xml" />
+
+    <!-- Open Graph -->
+    
+        <meta property="article:published_time" content="2020-08-25 23:59:00 -0300"/>
+        
+            <meta property="article:publisher" content="https://facebook.com/CabecaLivreCom" />
+        
+    
+    
+    
+    <meta property="og:description" content="O criador do Linux, Linus Torvalds, ganhou o Prêmio de Tecnologia do Milênio e um cheque de 600.000 euros da Academia de Tecnologia da Finlândia. Ele foi ind..." />
+    
+    
+        <meta property="og:image" content="https://cabecalivre.com/files/2020/08/linus1.jpg" />
+    
+    <meta property="og:site_name" content="Cabeça Livre" />
+    <meta property="og:title" content="Linus Torvalds: o Linux foi bem-sucedido graças ao egoísmo e à confiança" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://cabecalivre.com/2020/08/25/linus-torvalds-o-linux-foi-bem-sucedido-gracas-ao-egoismo-e-a-confianca/" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@CabecaLivreCom" />
+    
+
+    <!-- Favicons (made with RealFaviconGenerator.net) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cabecalivre.com/apple-touch-icon.png?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cabecalivre.com/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cabecalivre.com/favicon-16x16.png?v=4">
+    <link rel="manifest" href="https://cabecalivre.com/site.webmanifest?v=4">
+    <link rel="mask-icon" href="https://cabecalivre.com/safari-pinned-tab.svg?v=4" color="#424242">
+    <link rel="shortcut icon" href="https://cabecalivre.com/favicon.ico?v=4">
+    <meta name="msapplication-TileColor" content="#424242">
+    <meta name="theme-color" content="#424242">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="/libs/bootstrap-material-design/4.1.2/custom/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    
+
+    <!-- Fonte Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- JS -->
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.16.1-lts/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.js" integrity="sha256-GaerX2a/DuOnPrxn/4vH13dobiFUe/27LO6gCZDNauA=" crossorigin="anonymous"></script>
+    
+    <script src="/libs/font-awesome-gab-parler/0.3.0/js/font-awesome-gab-parler.js"></script>
+    <script src="//inc.freefind.com/inc/ffse-overlay.min.js" async></script>
+    <script src="/assets/js/main.js"></script>
+
+    
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65333685-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-65333685-6');
+        </script>
+        <!-- End Google Analytics -->
+    
+
+    
+        <!-- Google AdSense -->
+        <script data-ad-client="ca-pub-5193467168351289" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+    
+        <!-- AddThis -->
+        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec0947574225d87"></script>
+        <script type="text/javascript">
+            var addthis_config = {
+                data_track_clickback: true,
+                data_track_addressbar: true,
+                ui_language: 'pt'
+            };
+            var addthis_share = {
+                url: 'https://cabecalivre.com/2020/08/25/linus-torvalds-o-linux-foi-bem-sucedido-gracas-ao-egoismo-e-a-confianca/',
+                title: document.title,
+                description: 'O criador do Linux, Linus Torvalds, ganhou o Prêmio de Tecnologia do Milênio e um cheque de 600.000 euros da Academia de Tecnologia da Finlândia. Ele foi indicado para o prêmio em reconhecimento ao fato de ter criado o sistema operacional Linux original e ter continuado a decidir quais modificações deveriam ser feitas no kernel...'
+            };
+        </script>
+        <!-- End AddThis -->
+    
+</head>
+
+
+<body itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+        <!-- Fixed navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-toggle="drawer" data-target="#drawer">
+            <span class="sr-only">Exibir/esconder navegação</span>
+            <i class="material-icons">menu</i>
+        </button>
+
+        <a class="navbar-brand" href="/">Cabeça Livre</a>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav m-auto">
+                <!--
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/archive/">Archive</a>
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                -->
+            </ul>
+            <form class="form-inline" id="navbar-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                <input type="hidden" name="si" value="28330050">
+        		<input type="hidden" name="pid" value="r">
+        		<input type="hidden" name="n" value="0">
+        		<input type="hidden" name="_charset_" value="">
+        		<input type="hidden" name="bcd" value="&#247;">
+        		<input type="hidden" name="lang" value="pt">
+                <div class="input-group">
+                    <input class="form-control search-field" id="navbar-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary btn-number search-button" id="navbar-search-button" type="submit" value="search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div><!--#navbar-->
+    </div><!--.container-->
+</nav>
+
+        <!-- Navigation drawer -->
+<div id="drawer" class="bmd-layout-drawer bg-faded">
+    <header>
+        <a class="navbar-brand" href="/">Cabeça Livre</a>
+    </header>
+    <form class="form-inline border-top" id="drawer-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+        <input type="hidden" name="si" value="28330050">
+        <input type="hidden" name="pid" value="r">
+        <input type="hidden" name="n" value="0">
+        <input type="hidden" name="_charset_" value="">
+        <input type="hidden" name="bcd" value="&#247;">
+        <input type="hidden" name="lang" value="pt">
+        <div class="bmd-form-group-sm">
+            <div class="input-group">
+                <input class="form-control search-field" id="drawer-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary btn-number search-button" id="drawer-search-button" type="submit" value="search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div><!-- .input-group -->
+        </div><!-- .bmd-form-group-sm -->
+    </form>
+    <ul class="list-group list-group-flush border-top" id="drawer-links">
+        
+            
+                
+            
+                
+            
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/archive/">Archive</a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    </ul>
+</div>
+
+
+        <main class="bmd-layout-content">
+            <div class="container" id="main-container">
+                <div class="row">
+                    <div class='col-sm-8'>
+                        <div class="blog-post card mb-3">
+    <header class="card-header">
+        <h1 class="blog-post-title" itemprop="headline name">
+            <a class="blog-post-link" href="/2020/08/25/linus-torvalds-o-linux-foi-bem-sucedido-gracas-ao-egoismo-e-a-confianca/" itemprop="mainEntityOfPage url">
+                Linus Torvalds: o Linux foi bem-sucedido graças ao egoísmo e à confiança
+            </a>
+        </h1>
+        <div class="blog-post-meta row">
+            <div class='col-sm-6'>
+                <p class="blog-post-date" itemprop="datePublished" content="2020-08-25">
+                    <a href="/2020/08/25/">
+                        25 de
+                        
+                        Agosto
+                        
+                        de 2020
+                    </a>
+                </p>
+                <meta itemprop="dateModified" content="2022-02-07" />
+            </div>
+            <div class='col-sm-6'>
+                
+                    <div class='blog-post-share'>
+                        <!-- AddThis Sharing Buttons -->
+                        <div class="addthis_toolbox addthis_default_style">
+                            <a class="addthis_button_facebook"></a>
+                            <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                            <a class="addthis_button_telegram"></a>
+                            <a class="addthis_button_favorites"></a>
+                            <a class="addthis_button_compact"></a>
+                            <a class="addthis_counter addthis_bubble_style"></a>
+                        </div>
+                        <!-- AddThis Sharing Buttons End -->
+                    </div><!-- .blog-post-share -->
+                
+            </div><!-- .col-sm-6 -->
+        </div><!-- .blog-post-meta -->
+    </header>
+
+    <article class="blog-post-content card-body">
+        
+
+        <div itemprop="articleBody mainEntity">
+            
+<div class="alert alert-info no-ads-here" role="alert">
+    <div class="media">
+        <img class="mr-3" src="/cabecalivre-transparente.png" style="max-width: 64px;" />
+        <div class="media-body">
+            <h6 class="alert-heading mt-0">Nota do Cabeça Livre:</h6>
+            
+<p>O texto a seguir é uma tradução da matéria originalmente escrita por Leo Kelion em 13 de junho de 2012 para o jornal britânico BBC. O texto original, em inglês, pode ser conferido aqui:</p>
+
+<ul>
+  <li><a href="https://www.bbc.com/news/technology-18419231">Linus Torvalds: Linux succeeded thanks to selfishness and trust - BBC News</a></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/08/linus1.jpg" title="Linus Torvalds desenvolveu o Linux em 1991 enquanto estava na Universidade de Helsinque, na Finlândia. Ele se tornou cidadão americano em 2010.">
+<img src="/files/2020/08/linus1.jpg" alt="Linus Torvalds desenvolveu o Linux em 1991 enquanto estava na Universidade de Helsinque, na Finlândia. Ele se tornou cidadão americano em 2010." class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+<em class="caption" itemprop="description">
+<p>Linus Torvalds desenvolveu o Linux em 1991 enquanto estava na Universidade de Helsinque, na Finlândia. Ele se tornou cidadão americano em 2010.</p>
+
+</em>
+
+</div>
+
+<p><strong>O criador do Linux, Linus Torvalds, ganhou o Prêmio de Tecnologia do Milênio e um cheque de 600.000 euros da Academia de Tecnologia da Finlândia.</strong></p>
+
+<p>Ele foi indicado para o prêmio em reconhecimento ao fato de ter criado o sistema operacional Linux original e ter continuado a decidir quais modificações deveriam ser feitas no <em>kernel</em> (núcleo) do Linux — o código que permite que <em>software</em> e <em>hardware</em> trabalhem juntos.</p>
+
+<p>Hoje, vários sistemas baseados em Linux são executados em muitos dos servidores, decodificadores STB, <em>smartphones</em>, <em>tablets</em>, roteadores de rede, PCs e supercomputadores ao redor do mundo.</p>
+
+<p><em>Antes do anúncio, o Sr. Torvalds deu uma rara entrevista à BBC.</em></p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/08/linus2.jpg" title="O sistema para _smartphones_ Android, baseado em Linux, espalhou o uso da invenção do Sr. Torvalds.">
+<img src="/files/2020/08/linus2.jpg" alt="O sistema para _smartphones_ Android, baseado em Linux, espalhou o uso da invenção do Sr. Torvalds." class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+<em class="caption" itemprop="description">
+<p>O sistema para <em>smartphones</em> Android, baseado em Linux, espalhou o uso da invenção do Sr. Torvalds.</p>
+
+</em>
+
+</div>
+
+<p><strong>Quando você postou sobre o <em>kernel</em> do sistema original na Usenet em 1991, o que você achava que aconteceria com ele?</strong></p>
+
+<p>Eu acho que sua pergunta assume um nível de planejamento que simplesmente não existia na verdade. Não se tratava tanto sobre eu ter quaisquer expectativas do que aconteceria quando eu disponibilizasse os fontes do <em>kernel</em> original: muito do ímpeto para lançá-lo foi simplesmente uma espécie de “ei, olha o que eu fiz”.</p>
+
+<p>Eu definitivamente não esperava que as pessoas me ajudassem com o projeto, mas esperava algum <em>feedback</em> sobre o que eu tinha feito e procurava ideias do que mais as pessoas considerariam uma boa ideia.</p>
+
+<p><strong>O sucesso do Linux se deve em grande parte à sua natureza de código aberto. Por que você acha que as pessoas têm se disposto a abrir mão de tanto tempo sem recompensa financeira?</strong></p>
+
+<p>De várias formas, na verdade eu penso que a verdadeira ideia do código aberto é permitir que todos sejam “egoístas”, não tentar fazer com que todos contribuam para algum bem comum.</p>
+
+<p>Em outras palavras, eu não vejo o código aberto como algum tipo muito bonzinho que diz “vamos todos cantar kumbaya em volta da fogueira e fazer do mundo um lugar melhor”. Não, o código aberto só funciona de verdade se todos estiverem contribuindo para suas próprias motivações egoístas.</p>
+
+<p>Agora, esses motivos egoístas de forma alguma precisam ser “recompensas financeiras”, no entanto.</p>
+
+<p>As primeiras razões “egoístas” para fazer o Linux tendiam a se concentrar apenas no prazer de “futucar”. Foi por isso que o fiz — programar era meu <em>hobby</em> — paixão, na verdade — e aprender a controlar o <em>hardware</em> era meu próprio objetivo egoísta. E acabou que eu não estava tão sozinho nisso.</p>
+
+<p>Grandes universidades com departamentos de ciência da computação tinham pessoas interessadas nos mesmos tipos de coisas.</p>
+
+<p>E a maioria das pessoas assim pode não ser louca o suficiente para começar a escrever seus próprios sistemas operacionais do zero, mas certamente havia pessoas por aí que acharam essa coisa de mexer com o <em>hardware</em> interessante, e que estavam interessadas o suficiente para começar a brincar com o sistema e fazer sugestões de melhorias e, eventualmente, até mesmo fazerem elas mesmas essas melhorias e enviá-las de volta para mim.</p>
+
+<p>E os direitos autorais protegiam esse tipo de pessoa. Se você é uma pessoa que está interessada em sistemas operacionais, e você vê esse projeto que faz isso, você não vai querer se envolver se sentir que de alguma forma “tirariam proveito” das suas contribuições, mas com a GPLv2 [a licença], isso simplesmente nunca foi um problema.</p>
+
+<p>A propriedade fundamental da GPLv2 é um modelo muito simples de “olho por olho”: eu darei a você minhas melhorias, se você prometer devolver as suas.</p>
+
+<p>É uma licença fundamentalmente justa, e você não precisa se preocupar que outra pessoa vai aparecer e tirar proveito do seu trabalho.</p>
+
+<p>E o que então pareceu surpreender as pessoas é que essa noção de “justiça” realmente escalona muito bem.</p>
+
+<p>Claro, muitas empresas estavam no início bastante desconfiadas de uma licença que elas não estavam tão acostumadas antes, e às vezes desconfiadas em dobro, porque algumas partes da área do <em>software</em> livre tinham sido declaradamente anti-comerciais e esperavam que as empresas do dia pra noite transformassem tudo em <em>software</em> livre.</p>
+
+<p>Mas realmente, todo o modelo de “olho por olho” não é justo apenas numa escala individual, é justo na escala de uma empresa, e é justo numa escala global.</p>
+
+<p>Uma vez que as pessoas e empresas superaram seus obstáculos — renomeá-lo como “código aberto” e apenas deixar claro que aquilo não era algum tipo de empreitada anti-comercial definitivamente ajudou — as coisas simplesmente explodiram.</p>
+
+<p>E a questão é, se seus concorrentes não se esforçam da mesma maneira que você, eles não podem colher os mesmos tipos de recompensas que você: se eles não contribuem, eles não conseguem controlar a direção do projeto, e eles não terão o mesmo tipo de conhecimento e compreensão que você tem.</p>
+
+<p>Portanto, há realmente grandes vantagens em estar ativamente envolvido — você não pode simplesmente se escorar no trabalho de outra pessoa.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/08/linus3.jpg" title="O Sr. Torvalds construiu uma coleção de pinguins — o mascote oficial do _kernel_ do Linux.">
+<img src="/files/2020/08/linus3.jpg" alt="O Sr. Torvalds construiu uma coleção de pinguins — o mascote oficial do _kernel_ do Linux." class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+<em class="caption" itemprop="description">
+<p>O Sr. Torvalds construiu uma coleção de pinguins — o mascote oficial do <em>kernel</em> do Linux.</p>
+
+</em>
+
+</div>
+
+<p><strong>7.800 desenvolvedores em 80 países contribuíram para a última versão do <em>kernel</em> Linux. Mas, à medida que ele se torna mais complexo, existe o perigo de se tornar menos acessível para novas pessoas se envolverem?</strong></p>
+
+<p>Então, o <em>kernel</em> definitivamente cresceu e ficou mais complexo, e certas áreas centrais em particular são coisas que um novo desenvolvedor não deve de forma alguma esperar simplesmente chegar e começar a mexer.</p>
+
+<p>As pessoas ficam muito nervosas quando alguém que elas não veem como tendo um histórico sólido começa a enviar <em>patches</em> para o código principal — e complexo — como o do subsistema de máquinas virtuais.</p>
+
+<p>Portanto, é absolutamente muito mais difícil se tornar um desenvolvedor central hoje do que há 15 anos.</p>
+
+<p>Ao mesmo tempo, acho que é muito fácil entrar no desenvolvimento do <em>kernel</em> se você não for pelas partes mais centrais e complexas primeiro. O fato de eu lançar uma versão do <em>kernel</em> aproximadamente a cada três meses, e cada uma dessas versões geralmente tem mais de 1.000 pessoas envolvidas, mostra que certamente não sentimos falta de contribuidores.</p>
+
+<p><strong>Você mencionou anteriormente que você não tem condição de verificar se todo o código enviado funcionará em todo o <em>hardware</em> — o quão grande é o problema de confiar em um projeto de código aberto como esse?</strong></p>
+
+<p>Oh, confiança é a coisa mais importante. E é uma via de mão dupla.</p>
+
+<p>Não sou apenas eu que posso confiar que algum subtenente fará a coisa certa, eles, por sua vez, podem confiar em mim para ser imparcial e fazer a coisa certa.</p>
+
+<p>Certamente nem sempre concordamos, e às vezes as discussões podem se tornar bem acaloradas, mas no final do dia, vocês podem nem sempre gostar um do outro, mas pelo menos podem confiar que as pessoas não estão tentando sacanear umas às outras.</p>
+
+<p>E é por esse problema de confiança que eu nunca quis trabalhar para uma empresa comercial de Linux, por exemplo.</p>
+
+<p>Eu simplesmente não quero que as pessoas tenham sequer a impressão de viés — quero que as pessoas possam confiar que sou imparcial, não apenas porque me viram manter o <em>kernel</em> ao longo dos anos, mas porque sabem que eu simplesmente não não tenho nenhum incentivo onde eu poderia querer apoiar uma empresa Linux em vez de outra.</p>
+
+<p>Atualmente, eu trabalho em tempo integral no Linux, e sou pago para fazer isso, mas isso não aconteceu até que eu me sentisse confortável de que havia uma forma que poderia ser obviamente neutra, por meio de uma indústria sem fins lucrativos que realmente não vende o Linux em si.</p>
+
+<p>E mesmo assim, para afastar todos os temores, nós realmente nos certificamos de que meu contrato diz explicitamente que meu emprego não significa que a Linux Foundation possa me dizer o que fazer.</p>
+
+<p>Então, exatamente porque penso que essas questões de confiança são tão importantes, tenho um dos contratos de trabalho mais estranhos de que você já ouviu falar.</p>
+
+<p>É basicamente um parágrafo falando sobre o que devo fazer — basicamente se resume ao fato de que tudo o que faço deve ser de código aberto — e o resto do contrato é sobre todas as formas que a empresa para a qual trabalho não pode me influenciar.</p>
+
+<p>“Confiança” não se trata de algum tipo de neutralidade absoluta, ou algo parecido, se trata de um certo nível de previsibilidade e de saber que você não será enganado.</p>
+
+<blockquote>
+  <p>“Confiança” não se trata de algum tipo de neutralidade absoluta, ou algo parecido, se trata de um certo nível de previsibilidade e de saber que você não será enganado.</p>
+
+  <p><em>Linus Torvalds, criador do Linux</em></p>
+</blockquote>
+
+<p><strong>O Linux é popular em muitas áreas da computação, incluindo <em>smartphones</em> e servidores, mas nunca teve o mesmo avanço em <em>desktops</em> — você acha que isso algum dia acontecerá?</strong></p>
+
+<p>Então, eu acho que para transformar isso em um mercado consumidor, você realmente precisa vir pré-instalado. E, como o Android mostrou, o Linux realmente pode ser um produto de consumo. Portanto, não é que o mercado consumidor em si seja necessariamente um osso duro de roer, mas o “você precisa vir pré-instalado” é um grande ponto.</p>
+
+<p>E no mercado de <em>notebooks</em> e <em>desktops</em>, simplesmente nunca tivemos nenhuma empresa fazendo esse tipo de jogada. E não me interpretem mal — não é uma jogada fácil de se fazer.</p>
+
+<p>Dito isso, por outro lado, eu também não o descartaria. Toda essa coisa de “navegador onipresente” tornou esse tipo de jogo de mercado mais realista, e acho que a pressão do Google Chrome (Chromebox e Chromebooks) claramente aponta nessa direção.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/08/linus4.jpg" title="O _notebook_ Chromebook do Google vem com seu sistema baseado em Linux pré-instalado.">
+<img src="/files/2020/08/linus4.jpg" alt="O _notebook_ Chromebook do Google vem com seu sistema baseado em Linux pré-instalado." class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+<em class="caption" itemprop="description">
+<p>O <em>notebook</em> Chromebook do Google vem com seu sistema baseado em Linux pré-instalado.</p>
+
+</em>
+
+</div>
+
+<p>Portanto, eu ainda estou esperançoso. Para mim, o Linux no <em>desktop</em> é onde eu comecei, e o Linux no <em>desktop</em> é literalmente o que eu ainda uso hoje principalmente — embora eu obviamente tenha outros dispositivos Linux, incluindo um telefone Android — então eu pessoalmente adoraria que ele dominasse esse mercado também.</p>
+
+<p>Mas acho que nesse meio tempo não posso realmente reclamar do sucesso em outros mercados.</p>
+
+<p><strong>Steve Ballmer uma vez descreveu o Linux como um “câncer”, mas nos últimos meses ouvimos que a Microsoft está mudando sua divisão do Skype para computadores com Linux e agora está oferecendo uma versão baseada em Linux do seu serviço de nuvem Azure — isso te dá satisfação ?</strong></p>
+
+<p>Bem, digamos que estou aliviado que a Microsoft parece ter, pelo menos em algum grau, parado de ver o Linux como o inimigo. Toda essa coisa de “câncer” e “não americano” era realmente muito embaraçosa.</p>
+
+<blockquote>
+  <p>Estou aliviado que a Microsoft parece ter, pelo menos em algum grau, parado de ver o Linux como o inimigo.</p>
+
+  <p><em>Linus Torvalds, criador do Linux</em></p>
+</blockquote>
+
+<p><strong>O recente lançamento do Raspberry Pi, rodando Linux, atraiu muita atenção. Você tem esperança de que isso inspire outra geração de programadores que podem contribuir para o <em>kernel</em> do Linux?</strong></p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/08/linus5.jpg" title="O computador de baixo custo Raspberry Pi pode rodar um sistema operacional Linux carregado a partir de um cartão de memória.">
+<img src="/files/2020/08/linus5.jpg" alt="O computador de baixo custo Raspberry Pi pode rodar um sistema operacional Linux carregado a partir de um cartão de memória." class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+<em class="caption" itemprop="description">
+<p>O computador de baixo custo Raspberry Pi pode rodar um sistema operacional Linux carregado a partir de um cartão de memória.</p>
+
+</em>
+
+</div>
+
+<p>Então, pessoalmente, eu venho de uma experiência de “mexer com computadores” e, sim, como resultado, vejo que coisas como o Raspberry Pi são importantes: tentar possibilitar que um grupo maior de pessoas mexa com computadores e simplesmente brinque com eles.</p>
+
+<p>E tornar os computadores baratos o suficiente para que você possa realmente não apenas comprar o <em>hardware</em> em grande quantidade, mas talvez o mais importante, também consiga “suportar as perdas”.</p>
+
+<p>Com isso, quero dizer que eu suspeito que muitos deles irão para crianças que brincam um pouco com eles, mas que em seguida decidem que simplesmente não querem mais saber.</p>
+
+<p>Mas tudo bem. Se for barato o suficiente, você pode arcar com o custo de ter muitos “não quero saber” se, ainda que de vez em quando, você acabe acionando um caso até mesmo bastante raro de “quero saber”.</p>
+
+<p>Portanto, na verdade eu penso que se você fizer esses tipos de plataformas baratas o suficiente — realmente “baratas de jogar fora” de certa forma — o fato de que você pode desperdiçar pode ser uma coisa boa, se isso significar que você alcançará algumas crianças que de outra forma não teria alcançado.</p>
+
+<p><strong>Você trabalha em casa — o quão difícil é evitar se distrair com a vida familiar e se concentrar no que devem ser conceitos muito abstratos?</strong></p>
+
+<p>Oh, tenho certeza de que pode ser difícil para algumas pessoas. Nunca foi um problema para mim.</p>
+
+<p>Sempre achei os computadores fascinantes, muitas vezes a ponto de simplesmente sair e fazer minhas próprias coisas e não ser muito sociável.</p>
+
+<p>Ter uma família não parece ter feito esse traço de caráter realmente diferente.</p>
+
+<p>Eu ficarei feliz em ficar sentado em frente ao computador o dia todo, e se as crianças me distraírem quando estou no meio de algo, uma certa quantidade de pragas pode rolar.</p>
+
+<p>Em outras palavras: o que poderia ser visto como uma falha de caráter socialmente debilitante pode certamente funcionar a seu favor também.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/08/linus6.jpg" title="O Sr. Torvalds trabalha no _kernel_ Linux em seu escritório em casa em Oregon.">
+<img src="/files/2020/08/linus6.jpg" alt="O Sr. Torvalds trabalha no _kernel_ Linux em seu escritório em casa em Oregon." class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+<em class="caption" itemprop="description">
+<p>O Sr. Torvalds trabalha no <em>kernel</em> Linux em seu escritório em casa em Oregon.</p>
+
+</em>
+
+</div>
+
+
+        </div>
+
+        
+            <!-- AddThis Sharing Buttons -->
+            <div class="gap"></div>
+            <h2>Gostou? Que tal compartilhar?</h2>
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
+                <a class="addthis_button_telegram"></a>
+                <a class="addthis_button_email"></a>
+                <a class="addthis_button_favorites"></a>
+                <a class="addthis addthis_button_print"></a>
+                <a class="addthis_button_pdfonline"></a>
+                <a class="addthis_button_compact"></a>
+                <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <!-- AddThis Sharing Buttons End -->
+        
+
+        
+            <!-- Disqus -->
+            <div class="gap"></div>
+            <h2>Comentários</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = 'https://cabecalivre.com/2020/08/25/linus-torvalds-o-linux-foi-bem-sucedido-gracas-ao-egoismo-e-a-confianca/';
+                };
+
+                (function() {
+                    var d = document, s = d.createElement('script');
+
+                    s.src = '//cabecalivrecom.disqus.com/embed.js';
+
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>
+                <p><a href="http://www.enable-javascript.com/pt/" target="_blank">Habilite o JavaScript</a> para ver os <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários providos pelo Disqus</a>.</p>
+            </noscript>
+            <!-- Disqus End -->
+        
+    </article>
+</div><!-- .blog-post -->
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card mb-3" id="about">
+    <div class="card-header">
+        <h3><a name="about"></a>Sobre</h3>
+    </div>
+    <div class="card-body" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <p class='text-center' itemprop='logo' itemscope itemtype='http://schema.org/ImageObject'>
+            <a href='https://cabecalivre.com/cabecalivre.png' itemprop='url'>
+                <img src='https://cabecalivre.com/cabecalivre.png' class='img-fluid img-thumbnail rounded-circle'>
+            </a>
+            <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+            <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+        </p>
+        <p class="lead text-center">
+            <a href="https://cabecalivre.com" itemprop="url">
+                <span itemprop="name">Cabeça Livre</span>
+            </a>
+        </p>
+        <p class="text-center" itemprop="description">
+            Propagando ideias de liberdade.
+        </p>
+        <!-- Follow Buttons -->
+<div class="follow-buttons text-center">
+    
+        <a class="btn btn-facebook" href="https://facebook.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    
+    
+        <a class="btn btn-twitter" href="https://twitter.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-twitter"></i>
+        </a>
+    
+    
+        <a class="btn btn-instagram" href="https://instagram.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-instagram"></i>
+        </a>
+    
+    
+        <a class="btn btn-youtube" href="https://youtube.com/channel/UCvy3zgcREgyeo8LY2vdPxmw" itemprop="sameAs" role="button">
+            <i class="fab fa-youtube"></i>
+        </a>
+    
+    
+        <a class="btn btn-telegram" href="https://t.me/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+    
+    
+        <a class="btn btn-gab" href="https://gab.com/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="gab fa-gab-g"></i>
+        </a>
+    
+    
+        <a class="btn btn-gettr" href="https://gettr.com/user/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="gettr fa-gettr"></i>
+        </a>
+    
+    
+        <a class="btn btn-parler" href="https://parler.com/#/user/CabecaLivreCom" itemprop="sameAs" role="button">
+            <i class="parler fa-parler"></i>
+        </a>
+    
+    
+    
+    
+    
+    <a class="btn btn-rss" href="/feed.xml" role="button">
+        <i class="fas fa-rss"></i>
+    </a>
+</div>
+<!-- Follow Buttons End -->
+
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+<div class="card mb-3" id="author">
+    <div class="card-header">
+        <h3><a name="author"></a>Autor</h3>
+    </div>
+    <div class="card-body" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <p class="text-center">
+            <a href='https://cabecalivre.com/daniel-peterson.jpg' itemprop='url'>
+                <img src='https://cabecalivre.com/daniel-peterson.jpg' class='img-fluid img-thumbnail rounded-circle' style='max-width: 150px'>
+            </a>
+        </p>
+        
+            <p class="lead text-center" itemprop="name">
+                Daniel Peterson
+            </p>
+        
+        <p>Pseudônimo. Uma homenagem a <a href="https://www.youtube.com/c/DanielFragaBR">Daniel Fraga</a> e <a href="https://www.youtube.com/channel/UCLTWPE7XrHEe8m_xAmNbQ-Q">Peter Turguniev</a>, os dois maiores libertários do Brasil, e também a <a href="/2021/08/16/a-regra-mais-importante-para-a-vida-segundo-jordan-peterson/">Jordan Peterson</a>, psicólogo que sigo e admiro.</p>
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h3>Anúncio</h3>
+    </div>
+    <div class="card-body">
+        
+<!-- A-ADS Begin -->
+<iframe data-aa="1673147" src="//acceptable.a-ads.com/1673147" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<!-- A-ADS End -->
+
+
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h3>Apoie</h3>
+    </div>
+    <div class="card-body">
+        <p>Ajude este <em>site</em> tornando-se um patrocinador, agradeço qualquer contribuição!</p>
+        <p class='text-center'><a href='https://www.padrim.com.br/CabecaLivreCom' title='Padrim' target='_blank'>
+            <img src='/assets/img/padrim.jpg' alt='Padrim' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'>
+        </a></p>
+        <p class='text-center'><a href='https://www.padrim.com.br/CabecaLivreCom' title='Padrim' target='_blank'>Padrim</a></p>
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h3>Serviços</h3>
+    </div>
+    <div class="card-body">
+        <p class='text-center'><a href='/servico-de-descarte-de-bitcoins' title='Descarte de bitcoins'>
+            <img src='/assets/img/descarte-de-bitcoins.png' alt='Descarte de bitcoins' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'>
+        </a></p>
+        <p class='text-center'><a href='/servico-de-descarte-de-bitcoins' title='Descarte de bitcoins'>Descarte de bitcoins</a></p>
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+    <div class="container">
+        Copyleft 2022 <a href='#author'>Daniel Peterson</a>. Todos os direitos liberados.
+    </div>
+</footer>
+
+<meta itemprop="description" content="O criador do Linux, Linus Torvalds, ganhou o Prêmio de Tecnologia do Milênio e um cheque de 600.000 euros da Academia de Tecnologia da Finlândia. Ele foi indicado para o prêmio em reconhecimento ao fato de ter criado o sistema operacional Linux original e ter continuado a decidir quais modificações deveriam ser feitas no kernel...">
+
+
+    <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="url" content="https://cabecalivre.com/files/2020/08/linus1.jpg"/>
+        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+    </div>
+
+
+
+    <meta itemprop="inLanguage" content="pt"/>
+
+
+
+    <!-- Disqus -->
+    <script id="dsq-count-scr" src="//cabecalivrecom.disqus.com/count.js" async></script>
+    <!-- Disqus End -->
+
+
+
+    <!-- Google AdSense -->
+    
+
+    <script type="text/javascript">
+        adsbygoogle = window.adsbygoogle || [];
+
+        $(document).ready(function(){
+            
+            $('.adsbygoogle').each(function(index, element){
+                adsbygoogle.push({});
+            });
+        });
+    </script>
+    <!-- Google AdSense End -->
+
+
+
+            
+        </main>
+    </div><!-- .bmd-layout-container -->
+</body>
+</html>
