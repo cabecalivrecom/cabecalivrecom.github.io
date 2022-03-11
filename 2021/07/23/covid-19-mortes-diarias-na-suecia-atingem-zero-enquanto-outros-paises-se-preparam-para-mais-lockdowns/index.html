@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" prefix="
+<html lang="pt" class="h-100" prefix="
     addthis: http://www.addthis.com/help/api-spec
     og: http://ogp.me/ns#
     fb: http://ogp.me/ns/fb#
@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
         <script type="text/javascript">
@@ -24,7 +24,7 @@
     <link rel="alternate" type="application/rss+xml" title="Cabeça Livre" href="https://cabecalivre.com/feed.xml" />
 
     <!-- OpenSearch -->
-    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar em Cabeça Livre" href="https://cabecalivre.com/opensearch.xml" />
+    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar no Cabeça Livre" href="https://cabecalivre.com/opensearch.xml" />
 
     <!-- Open Graph -->
     
@@ -62,11 +62,10 @@
     <meta name="theme-color" content="#424242">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-        <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
-        <link rel="stylesheet" href="/libs/bootstrap-material-design/4.1.2/custom/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/materia/bootstrap.min.css" integrity="sha256-I1/fNjCD26D0FEPPH2ox/AMQo4owDy1DsUkCJ5e/Ud4=" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     
 
@@ -75,15 +74,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/css/md-color-palette.css">    
     <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- JS -->
     
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/popper.js@1.16.1-lts/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
-        <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.js" integrity="sha256-GaerX2a/DuOnPrxn/4vH13dobiFUe/27LO6gCZDNauA=" crossorigin="anonymous"></script>
     
     <script src="/libs/font-awesome-gab-parler/0.3.0/js/font-awesome-gab-parler.js"></script>
@@ -105,12 +104,12 @@
 
     
         <!-- Google AdSense -->
-        <script data-ad-client="ca-pub-5193467168351289" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5193467168351289' crossorigin='anonymous'></script>
     
 
     
         <!-- AddThis -->
-        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec0947574225d87"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec0947574225d87"></script>
         <script type="text/javascript">
             var addthis_config = {
                 data_track_clickback: true,
@@ -128,672 +127,697 @@
 </head>
 
 
-<body itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
-        <!-- Fixed navbar -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-    <div class="container">
-        <button type="button" class="navbar-toggler" data-toggle="drawer" data-target="#drawer">
-            <span class="sr-only">Exibir/esconder navegação</span>
-            <i class="material-icons">menu</i>
-        </button>
+<body class="d-flex flex-column h-100" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark pt-2 pb-2">
+        <div class="container justify-content-start">
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-navbar" aria-controls="mobile-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a class="navbar-brand" href="/">Cabeça Livre</a>
+            <a class="navbar-brand" href="/">
+                <img src="/favicon-32x32.png" alt="" width="28" height="28" class="d-inline-block align-middle">
+                <span class="d-inline-block align-middle">Cabeça Livre</span>
+            </a>
 
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav m-auto">
-                <!--
-                    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <!--
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/archive/">Archive</a>
-                            </li>
+                            
                         
-                    
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/archive/">Archive</a>
+                                </li>
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
-                            </li>
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                                </li>
+                            
                         
-                    
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                                </li>
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
-                            </li>
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                                </li>
+                            
                         
-                    
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
-                            </li>
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
-                        
-                    
-                        
-                    
-                -->
-            </ul>
-            <form class="form-inline" id="navbar-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
-                <input type="hidden" name="si" value="28330050">
-        		<input type="hidden" name="pid" value="r">
-        		<input type="hidden" name="n" value="0">
-        		<input type="hidden" name="_charset_" value="">
-        		<input type="hidden" name="bcd" value="&#247;">
-        		<input type="hidden" name="lang" value="pt">
-                <div class="input-group">
-                    <input class="form-control search-field" id="navbar-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary btn-number search-button" id="navbar-search-button" type="submit" value="search">
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link d-none d-lg-inline-block" id="navbar-search-button" data-bs-toggle="offcanvas" data-bs-target="#collapsible-search" aria-controls="collapsible-search">
                             <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><!--#navbarCollapse-->
+        </div><!--.container-->
+    </nav>
+</header>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-navbar">
+    <div class="offcanvas-header">
+        <a class="navbar-brand" href="/">
+            <img src="/favicon-32x32.png" alt="" width="28" height="28" class="d-inline-block align-text-top">
+            Cabeça Livre
+        </a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <form class="form-inline d-flex" id="mobile-navbar-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+            <input type="hidden" name="si" value="28330050">
+            <input type="hidden" name="pid" value="r">
+            <input type="hidden" name="n" value="0">
+            <input type="hidden" name="_charset_" value="">
+            <input type="hidden" name="bcd" value="&#247;">
+            <input type="hidden" name="lang" value="pt">
+            <div class="input-group">
+                <input class="form-control me-2" id="mobile-navbar-search-field" name="query" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-dark my-2 my-sm-0" id="mobile-navbar-search-button" value="search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <ul class="nav flex-column mt-3">
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/archive/">Archive</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        </ul>
+    </div><!-- .offcanvas-body -->
+</div><!-- .offcanvas -->
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="collapsible-search">
+    <div class="offcanvas-body">
+        <div class="container">
+            <form class="form-inline d-flex" id="collapsible-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                <input type="hidden" name="si" value="28330050">
+                <input type="hidden" name="pid" value="r">
+                <input type="hidden" name="n" value="0">
+                <input type="hidden" name="_charset_" value="">
+                <input type="hidden" name="bcd" value="&#247;">
+                <input type="hidden" name="lang" value="pt">
+                <div class="input-group">
+                    <input class="form-control me-2" id="collapsible-search-text" name="query" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-dark my-2 my-sm-0" id="collapsible-search-search-button" value="search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary my-2 my-sm-0" id="collapsible-search-close-button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fas fa-times"></i>
                         </button>
                     </div>
                 </div>
             </form>
-        </div><!--#navbar-->
-    </div><!--.container-->
-</nav>
-
-        <!-- Navigation drawer -->
-<div id="drawer" class="bmd-layout-drawer bg-faded">
-    <header>
-        <a class="navbar-brand" href="/">Cabeça Livre</a>
-    </header>
-    <form class="form-inline border-top" id="drawer-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
-        <input type="hidden" name="si" value="28330050">
-        <input type="hidden" name="pid" value="r">
-        <input type="hidden" name="n" value="0">
-        <input type="hidden" name="_charset_" value="">
-        <input type="hidden" name="bcd" value="&#247;">
-        <input type="hidden" name="lang" value="pt">
-        <div class="bmd-form-group-sm">
-            <div class="input-group">
-                <input class="form-control search-field" id="drawer-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
-                <div class="input-group-append">
-                    <button class="btn btn-secondary btn-number search-button" id="drawer-search-button" type="submit" value="search">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div><!-- .input-group -->
-        </div><!-- .bmd-form-group-sm -->
-    </form>
-    <ul class="list-group list-group-flush border-top" id="drawer-links">
-        
-            
-                
-            
-                
-            
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/archive/">Archive</a>
-                    </li>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
-                    </li>
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
-                    </li>
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
-                    </li>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        
-    </ul>
+        </div><!-- .container -->
+    </div><!-- .offcanvas-body -->
 </div>
 
 
-        <main class="bmd-layout-content">
-            <div class="container" id="main-container">
-                <div class="row">
-                    <div class='col-sm-8'>
-                        <div class="blog-post card mb-3">
+    <main class="flex-shrink-0">
+        <div class="container" id="main-container">
+            <div class="row">
+                <div class='col-sm-8'>
+                    <div class="blog-post card mb-3">
     <header class="card-header">
         <h1 class="blog-post-title" itemprop="headline name">
             <a class="blog-post-link" href="/2021/07/23/covid-19-mortes-diarias-na-suecia-atingem-zero-enquanto-outros-paises-se-preparam-para-mais-lockdowns/" itemprop="mainEntityOfPage url">
@@ -802,8 +826,8 @@
         </h1>
         <div class="blog-post-meta row">
             <div class='col-sm-6'>
-                <p class="blog-post-date" itemprop="datePublished" content="2021-07-23">
-                    <a href="/2021/07/23/">
+                <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-07-23">
+                    <a class='text-muted' href="/2021/07/23/">
                         23 de
                         
                         Julho
@@ -815,7 +839,7 @@
             </div>
             <div class='col-sm-6'>
                 
-                    <div class='blog-post-share'>
+                    <div class='blog-post-share ms-auto me-auto float-sm-end'>
                         <!-- AddThis Sharing Buttons -->
                         <div class="addthis_toolbox addthis_default_style">
                             <a class="addthis_button_facebook"></a>
@@ -841,7 +865,7 @@
 <img src="/files/2021/07/anders-tegnell.jpg" alt="Crédito da imagem: Frankie Fouganthin em [Wikimedia Commons](https://pt.wikipedia.org/wiki/Ficheiro:Anders_Tegnell_in_2020_(1_av_15).jpg), CC BY 2.0" class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
-<em class="caption" itemprop="description">
+<em class="caption d-block mt-3" itemprop="description">
 <p>Crédito da imagem: Frankie Fouganthin em <a href="https://pt.wikipedia.org/wiki/Ficheiro:Anders_Tegnell_in_2020_(1_av_15).jpg">Wikimedia Commons</a>, CC BY 2.0</p>
 
 </em>
@@ -859,16 +883,18 @@
 <p>Um país que não tem aparecido muito nos jornais é a Suécia.</p>
 
 <!-- A-ADS Begin -->
-<iframe data-aa="1673143" src="//acceptable.a-ads.com/1673143" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<iframe data-aa="1673143" src="//acceptable.a-ads.com/1673143" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;"></iframe>
 <!-- A-ADS End -->
 
 <p>A Suécia, é claro, foi demonizada em 2020 por abrir mão de um rígido <em>lockdown</em>. O jornal The Guardian chamou sua abordagem de “<a href="https://www.theguardian.com/world/2020/mar/30/catastrophe-sweden-coronavirus-stoicism-lockdown-europe">catástrofe</a>” na manchete, enquanto a CBS News <a href="https://www.cbsnews.com/news/sweden-covid-coronavirus-deaths-make-sweden-example-of-how-not-to-deal-with-covid-19/">disse</a> que a Suécia se tornou “um exemplo de como não lidar com a Covid-19”.</p>
 
-<div class="alert alert-info no-ads-here" role="alert">
-    <div class="media">
-        <img class="mr-3" src="/cabecalivre-transparente.png" style="max-width: 64px;" />
-        <div class="media-body">
-            <h6 class="alert-heading mt-0">Nota do Cabeça Livre:</h6>
+<div class="alert alert-info no-ads-here text-reset" role="alert">
+    <div class="d-flex">
+        <div class="flex-shrink-0">
+            <img src="/cabecalivre-transparente.png" style="max-width: 64px;" />
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <h6 class="alert-heading mt-0 text-reset">Nota do Cabeça Livre:</h6>
             
 <p>A mídia brasileira também demonizou a Suécia em 2020. A BBC chamou de “<a href="https://www.bbc.com/portuguese/internacional-52092152">arriscada</a>” a “aposta” da Suécia. O Globo chamou de “<a href="https://oglobo.globo.com/mundo/avanco-da-covid-19-poe-em-xeque-estrategia-controversa-da-suecia-24751885">estratégia controversa</a>”. Em manchete do G1, era possível ler: “<a href="https://g1.globo.com/mundo/noticia/2020/06/22/e-terrivel-ser-velho-na-suecia-88percent-dos-idosos-com-covid-19-morreram-sem-cuidados-hospitalares.ghtml">é terrível ser velho na Suécia</a>”. Cientista sueco citado pelo Uol opinou que a Suécia era um modelo que “<a href="https://g1.globo.com/mundo/noticia/2020/06/22/e-terrivel-ser-velho-na-suecia-88percent-dos-idosos-com-covid-19-morreram-sem-cuidados-hospitalares.ghtml">não deve ser seguido pelo Brasil</a>”.</p>
 
@@ -886,11 +912,13 @@
 <blockquote class="twitter-tweet" data-lang="pt"><p lang="en" dir="ltr">While many nations are gearing up for more lockdowns, daily deaths in Sweden are still at 0. <br /><br />This isn&#39;t what they said would happen. <a href="https://t.co/udOcaacwx4">pic.twitter.com/udOcaacwx4</a></p>&mdash; Jon Miltimore (@miltimore79) <a href="https://twitter.com/miltimore79/status/1418188532921819142?ref_src=twsrc%5Etfw">22 de julho de 2021</a></blockquote>
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<div class="alert alert-info no-ads-here" role="alert">
-    <div class="media">
-        <img class="mr-3" src="/cabecalivre-transparente.png" style="max-width: 64px;" />
-        <div class="media-body">
-            <h6 class="alert-heading mt-0">Nota do Cabeça Livre:</h6>
+<div class="alert alert-info no-ads-here text-reset" role="alert">
+    <div class="d-flex">
+        <div class="flex-shrink-0">
+            <img src="/cabecalivre-transparente.png" style="max-width: 64px;" />
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <h6 class="alert-heading mt-0 text-reset">Nota do Cabeça Livre:</h6>
             
 <p>Duvida? Então confira você mesmo! Pesquise no Google: <a href="https://www.google.com/search?q=mortes+por+covid-19+na+su%C3%A9cia">mortes por Covid-19 na Suécia</a>.</p>
 
@@ -925,7 +953,7 @@
 </div>
 
 <!-- A-ADS Begin -->
-<iframe data-aa="1673145" src="//acceptable.a-ads.com/1673145" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<iframe data-aa="1673145" src="//acceptable.a-ads.com/1673145" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;"></iframe>
 <!-- A-ADS End -->
 
 <p>Mesmo há um ano, estava claro que as afirmações hiperbólicas sobre “a catástrofe sueca” eram falsas; só pergunte a <a href="https://fee.org/articles/elon-musk-on-lockdowns-sweden-was-right/">Elon Musk</a> (veja também: <a href="https://fee.org/articles/5-charts-that-show-sweden-s-strategy-worked-the-lockdowns-failed/">aqui</a>, <a href="https://fee.org/articles/why-sweden-succeeded-in-flattening-the-curve-and-new-york-failed/">aqui</a> e <a href="https://fee.org/articles/sweden-now-has-a-lower-covid-19-death-rate-than-the-us-here-s-why-it-matters/">aqui</a>). Mas, um ano depois, são esmagadoras as evidências de que a Suécia enfrentou a pandemia da forma correta. A taxa de mortalidade geral da Suécia em 2020 foi <a href="https://fee.org/articles/sweden-saw-lower-mortality-rate-than-most-of-europe-in-2020-despite-no-lockdown/">menor</a> do que a maior parte da Europa e sua economia sofreu <a href="https://fee.org/articles/bbc-sweden-s-economy-is-doing-way-better-than-the-rest-of-the-eu-during-the-covid-19-pandemic/">muito menos</a>. Enquanto isso, hoje a Suécia é mais livre e saudável do que praticamente qualquer outro país da Europa.</p>
@@ -933,10 +961,10 @@
 <p>Enquanto grande parte do mundo continua agarrada ao medo e as nações desenvolvem novas restrições para encurtar liberdades básicas, a Suécia continua sendo um lembrete vital e brilhante de que existe um caminho melhor.</p>
 
 <!-- A-ADS Begin -->
-<iframe data-aa="1673145" src="//acceptable.a-ads.com/1673145" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<iframe data-aa="1673145" src="//acceptable.a-ads.com/1673145" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;"></iframe>
 <!-- A-ADS End -->
 
-<div class="alert alert-success alert-update" role="alert">
+<div class="alert alert-success" role="alert">
     <i class="fas fa-sync-alt" aria-hidden="true"></i> <strong>Atualização (21/09/2021):</strong>
     
 <p>Muitas pessoas comparam a Suécia com os países nórdicos vizinhos (Noruega, Finlândia e Dinamarca), alegando que os vizinhos que fizeram <em>lockdown</em> tiveram desempenho melhor em relação à pandemia:</p>
@@ -953,7 +981,7 @@
 <img src="/files/2021/09/suecia-mortes-comparacao.jpg" alt="Fonte: [Wikipedia](https://en.wikipedia.org/wiki/COVID-19_pandemic_by_country_and_territory#Total_cases_and_death_rates_by_country_(John-Hopkins_University_CRC_data)) via [Universidade Johns Hopkins](https://coronavirus.jhu.edu/data/mortality). Acesso em: 21 de setembro de 2021." class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
-<em class="caption" itemprop="description">
+<em class="caption d-block mt-3" itemprop="description">
 <p>Fonte: <a href="https://en.wikipedia.org/wiki/COVID-19_pandemic_by_country_and_territory#Total_cases_and_death_rates_by_country_(John-Hopkins_University_CRC_data)">Wikipedia</a> via <a href="https://coronavirus.jhu.edu/data/mortality">Universidade Johns Hopkins</a>. Acesso em: 21 de setembro de 2021.</p>
 
 </em>
@@ -972,7 +1000,7 @@
 <img src="/files/2021/07/covid-delta.jpg" alt="Se você não assiste a TV, está desinformado. Mas se você assiste, está mal informado." class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
-<em class="caption" itemprop="description">
+<em class="caption d-block mt-3" itemprop="description">
 <p>Se você não assiste a TV, está desinformado. Mas se você assiste, está mal informado.</p>
 
 </em>
@@ -990,10 +1018,12 @@
   </li>
 </ul>
 
-<div class="alert alert-primary no-ads-here" role="alert">
-    <div class="media">
-        <img class="mr-4" src="/assets/img/speakers-corner.png" style="max-width: 64px;" />
-        <div class="media-body">
+<div class="alert alert-patrocinio no-ads-here text-reset" role="alert">
+    <div class="d-flex">
+        <div class="flex-shrink-0">
+            <img src="/assets/img/speakers-corner.png" style="max-width: 64px;" />
+        </div>
+        <div class="flex-grow-1 ms-3">
             
 <p>Queridos leitores,</p>
 
@@ -1067,9 +1097,9 @@
     </article>
 </div><!-- .blog-post -->
 
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card mb-3" id="about">
+                </div>
+                <div class="col-sm-4">
+                    <div class="card mb-3" id="about">
     <div class="card-header">
         <h3><a name="about"></a>Sobre</h3>
     </div>
@@ -1086,56 +1116,56 @@
                 <span itemprop="name">Cabeça Livre</span>
             </a>
         </p>
-        <p class="text-center" itemprop="description">
+        <p class="text" itemprop="description">
             Propagando ideias de liberdade.
         </p>
         <!-- Follow Buttons -->
 <div class="follow-buttons text-center">
     
-        <a class="btn btn-facebook" href="https://facebook.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-facebook" href="https://facebook.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-facebook-f"></i>
         </a>
     
     
-        <a class="btn btn-twitter" href="https://twitter.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-twitter" href="https://twitter.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-twitter"></i>
         </a>
     
     
-        <a class="btn btn-instagram" href="https://instagram.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-instagram" href="https://instagram.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-instagram"></i>
         </a>
     
     
-        <a class="btn btn-youtube" href="https://youtube.com/channel/UCvy3zgcREgyeo8LY2vdPxmw" itemprop="sameAs" role="button">
+    
+        <a class="btn btn-primary btn-youtube" href="https://youtube.com/channel/UCvy3zgcREgyeo8LY2vdPxmw" itemprop="sameAs" role="button">
             <i class="fab fa-youtube"></i>
         </a>
     
     
-        <a class="btn btn-telegram" href="https://t.me/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-telegram" href="https://t.me/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-telegram-plane"></i>
         </a>
     
     
-        <a class="btn btn-gab" href="https://gab.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-gab" href="https://gab.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="gab fa-gab-g"></i>
         </a>
     
     
-        <a class="btn btn-gettr" href="https://gettr.com/user/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-gettr" href="https://gettr.com/user/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="gettr fa-gettr"></i>
         </a>
     
     
-        <a class="btn btn-parler" href="https://parler.com/#/user/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-parler" href="https://parler.com/#/user/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="parler fa-parler"></i>
         </a>
     
     
     
     
-    
-    <a class="btn btn-rss" href="/feed.xml" role="button">
+    <a class="btn btn-primary btn-rss" href="/feed.xml" role="button">
         <i class="fas fa-rss"></i>
     </a>
 </div>
@@ -1150,8 +1180,8 @@
     </div>
     <div class="card-body" itemprop="author" itemscope itemtype="http://schema.org/Person">
         <p class="text-center">
-            <a href='https://cabecalivre.com/daniel-peterson.jpg' itemprop='url'>
-                <img src='https://cabecalivre.com/daniel-peterson.jpg' class='img-fluid img-thumbnail rounded-circle' style='max-width: 150px'>
+            <a href='https://cabecalivre.com/daniel-peterson.jpg' itemprop='url' title='Daniel Peterson'>
+                <img src='https://cabecalivre.com/daniel-peterson.jpg' class='img-fluid img-thumbnail rounded-circle'>
             </a>
         </p>
         
@@ -1172,7 +1202,7 @@
     <div class="card-body">
         
 <!-- A-ADS Begin -->
-<iframe data-aa="1673147" src="//acceptable.a-ads.com/1673147" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<iframe data-aa='1673147' src='//acceptable.a-ads.com/1673147' style='border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;'></iframe>
 <!-- A-ADS End -->
 
 
@@ -1204,13 +1234,13 @@
     </div><!-- .card-body -->
 </div><!-- .card -->
 
-                    </div>
                 </div>
             </div>
+        </div>
 
-            <footer class="footer">
+        <footer class="footer mt-auto py-3 bg-light shadow-lg">
     <div class="container">
-        Copyleft 2022 <a href='#author'>Daniel Peterson</a>. Todos os direitos liberados.
+        <span class="text-muted">Copyleft 2022 <a href='#author'>Daniel Peterson</a>. Todos os direitos liberados.</span>
     </div>
 </footer>
 
@@ -1252,8 +1282,7 @@
 
 
 
-            
-        </main>
-    </div><!-- .bmd-layout-container -->
+        
+    </main>
 </body>
 </html>

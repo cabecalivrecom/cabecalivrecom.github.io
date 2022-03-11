@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" prefix="
+<html lang="pt" class="h-100" prefix="
     addthis: http://www.addthis.com/help/api-spec
     og: http://ogp.me/ns#
     fb: http://ogp.me/ns/fb#
@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
         <script type="text/javascript">
@@ -24,7 +24,7 @@
     <link rel="alternate" type="application/rss+xml" title="Cabeça Livre" href="https://cabecalivre.com/feed.xml" />
 
     <!-- OpenSearch -->
-    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar em Cabeça Livre" href="https://cabecalivre.com/opensearch.xml" />
+    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar no Cabeça Livre" href="https://cabecalivre.com/opensearch.xml" />
 
     <!-- Open Graph -->
     
@@ -62,11 +62,10 @@
     <meta name="theme-color" content="#424242">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-        <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
-        <link rel="stylesheet" href="/libs/bootstrap-material-design/4.1.2/custom/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/materia/bootstrap.min.css" integrity="sha256-I1/fNjCD26D0FEPPH2ox/AMQo4owDy1DsUkCJ5e/Ud4=" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     
 
@@ -75,15 +74,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/css/md-color-palette.css">    
     <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- JS -->
     
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/popper.js@1.16.1-lts/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
-        <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.js" integrity="sha256-GaerX2a/DuOnPrxn/4vH13dobiFUe/27LO6gCZDNauA=" crossorigin="anonymous"></script>
     
     <script src="/libs/font-awesome-gab-parler/0.3.0/js/font-awesome-gab-parler.js"></script>
@@ -105,12 +104,12 @@
 
     
         <!-- Google AdSense -->
-        <script data-ad-client="ca-pub-5193467168351289" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5193467168351289' crossorigin='anonymous'></script>
     
 
     
         <!-- AddThis -->
-        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec0947574225d87"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec0947574225d87"></script>
         <script type="text/javascript">
             var addthis_config = {
                 data_track_clickback: true,
@@ -128,672 +127,697 @@
 </head>
 
 
-<body itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
-        <!-- Fixed navbar -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-    <div class="container">
-        <button type="button" class="navbar-toggler" data-toggle="drawer" data-target="#drawer">
-            <span class="sr-only">Exibir/esconder navegação</span>
-            <i class="material-icons">menu</i>
-        </button>
+<body class="d-flex flex-column h-100" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark pt-2 pb-2">
+        <div class="container justify-content-start">
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-navbar" aria-controls="mobile-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a class="navbar-brand" href="/">Cabeça Livre</a>
+            <a class="navbar-brand" href="/">
+                <img src="/favicon-32x32.png" alt="" width="28" height="28" class="d-inline-block align-middle">
+                <span class="d-inline-block align-middle">Cabeça Livre</span>
+            </a>
 
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav m-auto">
-                <!--
-                    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <!--
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/archive/">Archive</a>
-                            </li>
+                            
                         
-                    
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/archive/">Archive</a>
+                                </li>
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
-                            </li>
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                                </li>
+                            
                         
-                    
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                                </li>
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
-                            </li>
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                                </li>
+                            
                         
-                    
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
-                            </li>
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
-                        
-                    
-                        
-                    
-                -->
-            </ul>
-            <form class="form-inline" id="navbar-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
-                <input type="hidden" name="si" value="28330050">
-        		<input type="hidden" name="pid" value="r">
-        		<input type="hidden" name="n" value="0">
-        		<input type="hidden" name="_charset_" value="">
-        		<input type="hidden" name="bcd" value="&#247;">
-        		<input type="hidden" name="lang" value="pt">
-                <div class="input-group">
-                    <input class="form-control search-field" id="navbar-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary btn-number search-button" id="navbar-search-button" type="submit" value="search">
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link d-none d-lg-inline-block" id="navbar-search-button" data-bs-toggle="offcanvas" data-bs-target="#collapsible-search" aria-controls="collapsible-search">
                             <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><!--#navbarCollapse-->
+        </div><!--.container-->
+    </nav>
+</header>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-navbar">
+    <div class="offcanvas-header">
+        <a class="navbar-brand" href="/">
+            <img src="/favicon-32x32.png" alt="" width="28" height="28" class="d-inline-block align-text-top">
+            Cabeça Livre
+        </a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <form class="form-inline d-flex" id="mobile-navbar-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+            <input type="hidden" name="si" value="28330050">
+            <input type="hidden" name="pid" value="r">
+            <input type="hidden" name="n" value="0">
+            <input type="hidden" name="_charset_" value="">
+            <input type="hidden" name="bcd" value="&#247;">
+            <input type="hidden" name="lang" value="pt">
+            <div class="input-group">
+                <input class="form-control me-2" id="mobile-navbar-search-field" name="query" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-dark my-2 my-sm-0" id="mobile-navbar-search-button" value="search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <ul class="nav flex-column mt-3">
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/archive/">Archive</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        </ul>
+    </div><!-- .offcanvas-body -->
+</div><!-- .offcanvas -->
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="collapsible-search">
+    <div class="offcanvas-body">
+        <div class="container">
+            <form class="form-inline d-flex" id="collapsible-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                <input type="hidden" name="si" value="28330050">
+                <input type="hidden" name="pid" value="r">
+                <input type="hidden" name="n" value="0">
+                <input type="hidden" name="_charset_" value="">
+                <input type="hidden" name="bcd" value="&#247;">
+                <input type="hidden" name="lang" value="pt">
+                <div class="input-group">
+                    <input class="form-control me-2" id="collapsible-search-text" name="query" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-dark my-2 my-sm-0" id="collapsible-search-search-button" value="search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary my-2 my-sm-0" id="collapsible-search-close-button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fas fa-times"></i>
                         </button>
                     </div>
                 </div>
             </form>
-        </div><!--#navbar-->
-    </div><!--.container-->
-</nav>
-
-        <!-- Navigation drawer -->
-<div id="drawer" class="bmd-layout-drawer bg-faded">
-    <header>
-        <a class="navbar-brand" href="/">Cabeça Livre</a>
-    </header>
-    <form class="form-inline border-top" id="drawer-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
-        <input type="hidden" name="si" value="28330050">
-        <input type="hidden" name="pid" value="r">
-        <input type="hidden" name="n" value="0">
-        <input type="hidden" name="_charset_" value="">
-        <input type="hidden" name="bcd" value="&#247;">
-        <input type="hidden" name="lang" value="pt">
-        <div class="bmd-form-group-sm">
-            <div class="input-group">
-                <input class="form-control search-field" id="drawer-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
-                <div class="input-group-append">
-                    <button class="btn btn-secondary btn-number search-button" id="drawer-search-button" type="submit" value="search">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div><!-- .input-group -->
-        </div><!-- .bmd-form-group-sm -->
-    </form>
-    <ul class="list-group list-group-flush border-top" id="drawer-links">
-        
-            
-                
-            
-                
-            
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/archive/">Archive</a>
-                    </li>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
-                    </li>
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
-                    </li>
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
-                    </li>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        
-    </ul>
+        </div><!-- .container -->
+    </div><!-- .offcanvas-body -->
 </div>
 
 
-        <main class="bmd-layout-content">
-            <div class="container" id="main-container">
-                <div class="row">
-                    <div class='col-sm-8'>
-                        <div class="blog-post card mb-3">
+    <main class="flex-shrink-0">
+        <div class="container" id="main-container">
+            <div class="row">
+                <div class='col-sm-8'>
+                    <div class="blog-post card mb-3">
     <header class="card-header">
         <h1 class="blog-post-title" itemprop="headline name">
             <a class="blog-post-link" href="/2021/10/05/casos-de-covid-19-e-porcentagem-da-populacao-vacinada-nao-ha-relacao-conclui-estudo-de-harvard/" itemprop="mainEntityOfPage url">
@@ -802,8 +826,8 @@
         </h1>
         <div class="blog-post-meta row">
             <div class='col-sm-6'>
-                <p class="blog-post-date" itemprop="datePublished" content="2021-10-05">
-                    <a href="/2021/10/05/">
+                <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-10-05">
+                    <a class='text-muted' href="/2021/10/05/">
                         05 de
                         
                         Outubro
@@ -815,7 +839,7 @@
             </div>
             <div class='col-sm-6'>
                 
-                    <div class='blog-post-share'>
+                    <div class='blog-post-share ms-auto me-auto float-sm-end'>
                         <!-- AddThis Sharing Buttons -->
                         <div class="addthis_toolbox addthis_default_style">
                             <a class="addthis_button_facebook"></a>
@@ -841,7 +865,7 @@
 <img src="/files/2021/10/vacina-covid.jpg" alt="Crédito da imagem: TheDigitalArtist / [Pixabay](https://pixabay.com/images/id-4833616/)" class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
-<em class="caption" itemprop="description">
+<em class="caption d-block mt-3" itemprop="description">
 <p>Crédito da imagem: TheDigitalArtist / <a href="https://pixabay.com/images/id-4833616/">Pixabay</a></p>
 
 </em>
@@ -851,7 +875,7 @@
 <p>A propaganda dos governos e da grande mídia é que <a href="https://www.cartacapital.com.br/opiniao/acesso-universal-as-vacinas-e-a-unica-saida-para-a-pandemia/">as vacinas são a única saída para a pandemia de Covid-19</a>. Por exemplo, argumenta-se que, nos <a href="https://oglobo.globo.com/mundo/com-baixa-taxa-de-vacinacao-alta-de-casos-sul-dos-eua-vira-cinturao-da-covid-25168622">Estados Unidos</a>, os estados com mais internações são também os estados com menores taxas de vacinação. Narrativa semelhante também foi observada em outros países, como <a href="https://www.dw.com/pt-002/alemanha-debate-menos-liberdades-para-n%C3%A3o-vacinados/a-58637009">Alemanha</a> e <a href="https://www.dw.com/pt-br/brit%C3%A2nicos-antecipam-dia-da-liberdade-entre-temores-pela-variante-delta/a-58293990">Reino Unido</a>. Ao mesmo tempo, Israel, que foi <a href="https://veja.abril.com.br/saude/as-licoes-de-israel-exemplo-mundial-em-vacinacao-contra-a-covid-19/">saudado</a> por suas taxas altas e rápidas de vacinação, também viu um <a href="https://g1.globo.com/mundo/noticia/2021/08/25/israel-tem-recorde-de-casos-de-covid-nao-vacinados-sao-metade-dos-internados-em-estado-grave.ghtml">ressurgimento recorde</a> dos casos de Covid-19.</p>
 
 <!-- A-ADS Begin -->
-<iframe data-aa="1673143" src="//acceptable.a-ads.com/1673143" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<iframe data-aa="1673143" src="//acceptable.a-ads.com/1673143" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;"></iframe>
 <!-- A-ADS End -->
 
 <p>Diante disso, um <a href="https://doi.org/10.1007/s10654-021-00808-7">estudo</a> coordenado pelo professor <a href="https://www.hsph.harvard.edu/sv-subramanian/">S. V. Subramanian</a>, da Universidade de Harvard, e publicado na quinta-feira 30 de setembro no European Journal of Epidemiology, uma <a href="https://www.springer.com/journal/10654">revista científica com revisão por pares</a>, investigou a relação entre a porcentagem da população completamente vacinada e novos casos de Covid-19 em 68 países e mais 2.947 condados dos Estados Unidos.</p>
@@ -865,7 +889,7 @@
 <img src="/files/2021/10/subramanian-fig-1.png" alt="Relação entre casos por 1 milhão de pessoas (nos últimos 7 dias) e porcentagem da população completamente vacinada, em 68 países, em 3 de setembro de 2021." class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
-<em class="caption" itemprop="description">
+<em class="caption d-block mt-3" itemprop="description">
 <p>Relação entre casos por 1 milhão de pessoas (nos últimos 7 dias) e porcentagem da população completamente vacinada, em 68 países, em 3 de setembro de 2021.</p>
 
 </em>
@@ -879,7 +903,7 @@
 <p>Outro exemplo da falta de relação entre a porcentagem da população completamente vacinada e novos casos de Covid-19 pode ser visto nessa comparação: Islândia e Portugal, ambos países com mais de 75% da sua população completamente vacinada, têm mais casos de Covid-19 por 1 milhão de pessoas do que países como Vietnã e África do Sul, que têm cerca de 10% da sua população completamente vacinada.</p>
 
 <!-- A-ADS Begin -->
-<iframe data-aa="1673145" src="//acceptable.a-ads.com/1673145" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<iframe data-aa="1673145" src="//acceptable.a-ads.com/1673145" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;"></iframe>
 <!-- A-ADS End -->
 
 <p>A análise dos números dos condados dos Estados Unidos também não encontrou sinalização significativa de casos de Covid-19 diminuindo com porcentagens mais altas da população completamente vacinada:</p>
@@ -889,7 +913,7 @@
 <img src="/files/2021/10/subramanian-fig-3.png" alt="Porcentagem de condados que tiveram um aumento de casos entre dois períodos consecutivos de 7 dias versus porcentagem da população completamente vacinada, em 2.947 condados, em 2 de setembro de 2021." class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
-<em class="caption" itemprop="description">
+<em class="caption d-block mt-3" itemprop="description">
 <p>Porcentagem de condados que tiveram um aumento de casos entre dois períodos consecutivos de 7 dias versus porcentagem da população completamente vacinada, em 2.947 condados, em 2 de setembro de 2021.</p>
 
 </em>
@@ -904,11 +928,13 @@
 
 <p>Também estão surgindo <a href="https://doi.org/10.1101/2021.08.24.21262415">evidências</a> de que a imunidade obtida com a vacina da Pfizer pode não ser tão forte quanto a imunidade adquirida naturalmente após recuperação da Covid-19.</p>
 
-<div class="alert alert-info no-ads-here" role="alert">
-    <div class="media">
-        <img class="mr-3" src="/cabecalivre-transparente.png" style="max-width: 64px;" />
-        <div class="media-body">
-            <h6 class="alert-heading mt-0">Nota do Cabeça Livre:</h6>
+<div class="alert alert-info no-ads-here text-reset" role="alert">
+    <div class="d-flex">
+        <div class="flex-shrink-0">
+            <img src="/cabecalivre-transparente.png" style="max-width: 64px;" />
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <h6 class="alert-heading mt-0 text-reset">Nota do Cabeça Livre:</h6>
             
 <p>Sobre esse assunto, eu já havia comentado aqui 12 estudos indicados pelos médicos e professores Dr. Martin Kulldorff e Dr. Jay Bhattacharya, talvez você queira conferir depois:</p>
 
@@ -925,11 +951,13 @@
 
 <p>E embora a vacinação ofereça proteção aos vacinados contra hospitalização grave e morte, o CDC reportou um aumento na porcentagem de vacinados dentre as pessoas hospitalizadas por Covid de 0,01% em janeiro a 9% em maio de 2021. Também houve um aumento na porcentagem de vacinados dentre as pessoas que morreram com Covid nos hospitais de 0 a 15,1% nesse mesmo período.</p>
 
-<div class="alert alert-info no-ads-here" role="alert">
-    <div class="media">
-        <img class="mr-3" src="/cabecalivre-transparente.png" style="max-width: 64px;" />
-        <div class="media-body">
-            <h6 class="alert-heading mt-0">Nota do Cabeça Livre:</h6>
+<div class="alert alert-info no-ads-here text-reset" role="alert">
+    <div class="d-flex">
+        <div class="flex-shrink-0">
+            <img src="/cabecalivre-transparente.png" style="max-width: 64px;" />
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <h6 class="alert-heading mt-0 text-reset">Nota do Cabeça Livre:</h6>
             
 <p>O <a href="https://context-cdn.washingtonpost.com/notes/prod/default/documents/8a726408-07bd-46bd-a945-3af0ae2f3c37/note/57c98604-3b54-44f0-8b44-b148d8f75165"><em>link</em> para a referência</a> dessa informação no estudo retornava para mim uma mensagem de erro de “acesso negado” (<em>access denied</em>). <a href="https://duckduckgo.com/?q=Improving+communications+around+vaccine+breakthrough+and+vaccine+effectiveness">Pesquisando</a>, eu encontrei <a href="https://fm.cnbc.com/applications/cnbc.com/resources/editorialfiles/2021/07/30/CDC_slides.pdf">esse <em>link</em></a>, que parece ser o documento referenciado. De fato, essa informação consta nele (no <em>slide</em> 4):</p>
 
@@ -987,10 +1015,12 @@
 
 <p><strong>Autor:</strong> <a href="#author">Daniel Peterson</a></p>
 
-<div class="alert alert-primary no-ads-here" role="alert">
-    <div class="media">
-        <img class="mr-4" src="/assets/img/speakers-corner.png" style="max-width: 64px;" />
-        <div class="media-body">
+<div class="alert alert-patrocinio no-ads-here text-reset" role="alert">
+    <div class="d-flex">
+        <div class="flex-shrink-0">
+            <img src="/assets/img/speakers-corner.png" style="max-width: 64px;" />
+        </div>
+        <div class="flex-grow-1 ms-3">
             
 <p>Queridos leitores,</p>
 
@@ -1049,9 +1079,9 @@
     </article>
 </div><!-- .blog-post -->
 
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card mb-3" id="about">
+                </div>
+                <div class="col-sm-4">
+                    <div class="card mb-3" id="about">
     <div class="card-header">
         <h3><a name="about"></a>Sobre</h3>
     </div>
@@ -1068,56 +1098,56 @@
                 <span itemprop="name">Cabeça Livre</span>
             </a>
         </p>
-        <p class="text-center" itemprop="description">
+        <p class="text" itemprop="description">
             Propagando ideias de liberdade.
         </p>
         <!-- Follow Buttons -->
 <div class="follow-buttons text-center">
     
-        <a class="btn btn-facebook" href="https://facebook.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-facebook" href="https://facebook.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-facebook-f"></i>
         </a>
     
     
-        <a class="btn btn-twitter" href="https://twitter.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-twitter" href="https://twitter.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-twitter"></i>
         </a>
     
     
-        <a class="btn btn-instagram" href="https://instagram.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-instagram" href="https://instagram.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-instagram"></i>
         </a>
     
     
-        <a class="btn btn-youtube" href="https://youtube.com/channel/UCvy3zgcREgyeo8LY2vdPxmw" itemprop="sameAs" role="button">
+    
+        <a class="btn btn-primary btn-youtube" href="https://youtube.com/channel/UCvy3zgcREgyeo8LY2vdPxmw" itemprop="sameAs" role="button">
             <i class="fab fa-youtube"></i>
         </a>
     
     
-        <a class="btn btn-telegram" href="https://t.me/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-telegram" href="https://t.me/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-telegram-plane"></i>
         </a>
     
     
-        <a class="btn btn-gab" href="https://gab.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-gab" href="https://gab.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="gab fa-gab-g"></i>
         </a>
     
     
-        <a class="btn btn-gettr" href="https://gettr.com/user/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-gettr" href="https://gettr.com/user/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="gettr fa-gettr"></i>
         </a>
     
     
-        <a class="btn btn-parler" href="https://parler.com/#/user/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-parler" href="https://parler.com/#/user/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="parler fa-parler"></i>
         </a>
     
     
     
     
-    
-    <a class="btn btn-rss" href="/feed.xml" role="button">
+    <a class="btn btn-primary btn-rss" href="/feed.xml" role="button">
         <i class="fas fa-rss"></i>
     </a>
 </div>
@@ -1132,8 +1162,8 @@
     </div>
     <div class="card-body" itemprop="author" itemscope itemtype="http://schema.org/Person">
         <p class="text-center">
-            <a href='https://cabecalivre.com/daniel-peterson.jpg' itemprop='url'>
-                <img src='https://cabecalivre.com/daniel-peterson.jpg' class='img-fluid img-thumbnail rounded-circle' style='max-width: 150px'>
+            <a href='https://cabecalivre.com/daniel-peterson.jpg' itemprop='url' title='Daniel Peterson'>
+                <img src='https://cabecalivre.com/daniel-peterson.jpg' class='img-fluid img-thumbnail rounded-circle'>
             </a>
         </p>
         
@@ -1154,7 +1184,7 @@
     <div class="card-body">
         
 <!-- A-ADS Begin -->
-<iframe data-aa="1673147" src="//acceptable.a-ads.com/1673147" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<iframe data-aa='1673147' src='//acceptable.a-ads.com/1673147' style='border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;'></iframe>
 <!-- A-ADS End -->
 
 
@@ -1186,13 +1216,13 @@
     </div><!-- .card-body -->
 </div><!-- .card -->
 
-                    </div>
                 </div>
             </div>
+        </div>
 
-            <footer class="footer">
+        <footer class="footer mt-auto py-3 bg-light shadow-lg">
     <div class="container">
-        Copyleft 2022 <a href='#author'>Daniel Peterson</a>. Todos os direitos liberados.
+        <span class="text-muted">Copyleft 2022 <a href='#author'>Daniel Peterson</a>. Todos os direitos liberados.</span>
     </div>
 </footer>
 
@@ -1234,8 +1264,7 @@
 
 
 
-            
-        </main>
-    </div><!-- .bmd-layout-container -->
+        
+    </main>
 </body>
 </html>

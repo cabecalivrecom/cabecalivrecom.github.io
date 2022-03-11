@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" prefix="
+<html lang="pt" class="h-100" prefix="
     addthis: http://www.addthis.com/help/api-spec
     og: http://ogp.me/ns#
     fb: http://ogp.me/ns/fb#
@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
         <script type="text/javascript">
@@ -24,7 +24,7 @@
     <link rel="alternate" type="application/rss+xml" title="Cabeça Livre" href="https://cabecalivre.com/feed.xml" />
 
     <!-- OpenSearch -->
-    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar em Cabeça Livre" href="https://cabecalivre.com/opensearch.xml" />
+    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar no Cabeça Livre" href="https://cabecalivre.com/opensearch.xml" />
 
     <!-- Open Graph -->
     
@@ -57,11 +57,10 @@
     <meta name="theme-color" content="#424242">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-        <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
-        <link rel="stylesheet" href="/libs/bootstrap-material-design/4.1.2/custom/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/materia/bootstrap.min.css" integrity="sha256-I1/fNjCD26D0FEPPH2ox/AMQo4owDy1DsUkCJ5e/Ud4=" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     
 
@@ -70,15 +69,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/css/md-color-palette.css">    
     <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- JS -->
     
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/popper.js@1.16.1-lts/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
-        <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.js" integrity="sha256-GaerX2a/DuOnPrxn/4vH13dobiFUe/27LO6gCZDNauA=" crossorigin="anonymous"></script>
     
     <script src="/libs/font-awesome-gab-parler/0.3.0/js/font-awesome-gab-parler.js"></script>
@@ -100,12 +99,12 @@
 
     
         <!-- Google AdSense -->
-        <script data-ad-client="ca-pub-5193467168351289" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5193467168351289' crossorigin='anonymous'></script>
     
 
     
         <!-- AddThis -->
-        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec0947574225d87"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec0947574225d87"></script>
         <script type="text/javascript">
             var addthis_config = {
                 data_track_clickback: true,
@@ -123,672 +122,697 @@
 </head>
 
 
-<body itemscope itemtype="http://schema.org/WebPage">
-    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
-        <!-- Fixed navbar -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-    <div class="container">
-        <button type="button" class="navbar-toggler" data-toggle="drawer" data-target="#drawer">
-            <span class="sr-only">Exibir/esconder navegação</span>
-            <i class="material-icons">menu</i>
-        </button>
+<body class="d-flex flex-column h-100" itemscope itemtype="http://schema.org/WebPage">
+    <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark pt-2 pb-2">
+        <div class="container justify-content-start">
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-navbar" aria-controls="mobile-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a class="navbar-brand" href="/">Cabeça Livre</a>
+            <a class="navbar-brand" href="/">
+                <img src="/favicon-32x32.png" alt="" width="28" height="28" class="d-inline-block align-middle">
+                <span class="d-inline-block align-middle">Cabeça Livre</span>
+            </a>
 
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav m-auto">
-                <!--
-                    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <!--
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/archive/">Archive</a>
-                            </li>
+                            
                         
-                    
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/archive/">Archive</a>
+                                </li>
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
-                            </li>
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                                </li>
+                            
                         
-                    
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                                </li>
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
-                            </li>
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                                </li>
+                            
                         
-                    
+                            
                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
-                            </li>
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
+                            
                         
-                    
-                        
-                    
-                        
-                    
-                -->
-            </ul>
-            <form class="form-inline" id="navbar-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
-                <input type="hidden" name="si" value="28330050">
-        		<input type="hidden" name="pid" value="r">
-        		<input type="hidden" name="n" value="0">
-        		<input type="hidden" name="_charset_" value="">
-        		<input type="hidden" name="bcd" value="&#247;">
-        		<input type="hidden" name="lang" value="pt">
-                <div class="input-group">
-                    <input class="form-control search-field" id="navbar-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary btn-number search-button" id="navbar-search-button" type="submit" value="search">
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link d-none d-lg-inline-block" id="navbar-search-button" data-bs-toggle="offcanvas" data-bs-target="#collapsible-search" aria-controls="collapsible-search">
                             <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><!--#navbarCollapse-->
+        </div><!--.container-->
+    </nav>
+</header>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-navbar">
+    <div class="offcanvas-header">
+        <a class="navbar-brand" href="/">
+            <img src="/favicon-32x32.png" alt="" width="28" height="28" class="d-inline-block align-text-top">
+            Cabeça Livre
+        </a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <form class="form-inline d-flex" id="mobile-navbar-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+            <input type="hidden" name="si" value="28330050">
+            <input type="hidden" name="pid" value="r">
+            <input type="hidden" name="n" value="0">
+            <input type="hidden" name="_charset_" value="">
+            <input type="hidden" name="bcd" value="&#247;">
+            <input type="hidden" name="lang" value="pt">
+            <div class="input-group">
+                <input class="form-control me-2" id="mobile-navbar-search-field" name="query" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-dark my-2 my-sm-0" id="mobile-navbar-search-button" value="search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <ul class="nav flex-column mt-3">
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/archive/">Archive</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        </ul>
+    </div><!-- .offcanvas-body -->
+</div><!-- .offcanvas -->
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="collapsible-search">
+    <div class="offcanvas-body">
+        <div class="container">
+            <form class="form-inline d-flex" id="collapsible-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                <input type="hidden" name="si" value="28330050">
+                <input type="hidden" name="pid" value="r">
+                <input type="hidden" name="n" value="0">
+                <input type="hidden" name="_charset_" value="">
+                <input type="hidden" name="bcd" value="&#247;">
+                <input type="hidden" name="lang" value="pt">
+                <div class="input-group">
+                    <input class="form-control me-2" id="collapsible-search-text" name="query" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-dark my-2 my-sm-0" id="collapsible-search-search-button" value="search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary my-2 my-sm-0" id="collapsible-search-close-button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fas fa-times"></i>
                         </button>
                     </div>
                 </div>
             </form>
-        </div><!--#navbar-->
-    </div><!--.container-->
-</nav>
-
-        <!-- Navigation drawer -->
-<div id="drawer" class="bmd-layout-drawer bg-faded">
-    <header>
-        <a class="navbar-brand" href="/">Cabeça Livre</a>
-    </header>
-    <form class="form-inline border-top" id="drawer-search-form" role="search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
-        <input type="hidden" name="si" value="28330050">
-        <input type="hidden" name="pid" value="r">
-        <input type="hidden" name="n" value="0">
-        <input type="hidden" name="_charset_" value="">
-        <input type="hidden" name="bcd" value="&#247;">
-        <input type="hidden" name="lang" value="pt">
-        <div class="bmd-form-group-sm">
-            <div class="input-group">
-                <input class="form-control search-field" id="drawer-search-field" placeholder="Pesquisar" aria-label="Pesquisar" type="text" name="query">
-                <div class="input-group-append">
-                    <button class="btn btn-secondary btn-number search-button" id="drawer-search-button" type="submit" value="search">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div><!-- .input-group -->
-        </div><!-- .bmd-form-group-sm -->
-    </form>
-    <ul class="list-group list-group-flush border-top" id="drawer-links">
-        
-            
-                
-            
-                
-            
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/archive/">Archive</a>
-                    </li>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pontos-sobre-vacinas">Pontos sobre Vacinas</a>
-                    </li>
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pseudopandemia">Pseudopandemia: a tecnocracia do novo normal</a>
-                    </li>
-                
-            
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="/servico-de-descarte-de-bitcoins/">Serviço de descarte de bitcoins</a>
-                    </li>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        
-    </ul>
+        </div><!-- .container -->
+    </div><!-- .offcanvas-body -->
 </div>
 
 
-        <main class="bmd-layout-content">
-            <div class="container" id="main-container">
-                <div class="row">
-                    <div class='col-sm-8'>
-                        <div class="card mb-3">
+    <main class="flex-shrink-0">
+        <div class="container" id="main-container">
+            <div class="row">
+                <div class='col-sm-8'>
+                    <div class="card mb-3">
     <div class="card-header bg-primary">
         <h2 class="blog-archive-title" itemprop="headline name">
             <a href="/2021/09/" itemprop="url">
@@ -816,8 +840,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-28">
-                        <a href="/blog/2021/09/28/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-28">
+                        <a class='text-muted' href="/2021/09/28/">
                             28 de
                             
                             Setembro
@@ -829,12 +853,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/28/o-recurso-definitivo-para-resolver-o-problema-do-plastico/" addthis:title="&quot;O recurso definitivo&quot; para resolver o problema do plástico" addthis:description="&quot;Soluções&quot; governamentais para a poluição por plástico tendem a ser malsucedidas. Para soluções reais, duradouras e poderosas para problemas de poluição, precisamos usar uma ferramenta diferente.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -881,9 +905,9 @@
                 
                     <p itemprop="description">&quot;Soluções&quot; governamentais para a poluição por plástico tendem a ser malsucedidas. Para soluções reais, duradouras e poderosas para problemas de poluição, precisamos usar uma ferramenta diferente.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/28/o-recurso-definitivo-para-resolver-o-problema-do-plastico/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/28/o-recurso-definitivo-para-resolver-o-problema-do-plastico/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/28/o-recurso-definitivo-para-resolver-o-problema-do-plastico/">
+                    <a class='card-link float-end' href="/2021/09/28/o-recurso-definitivo-para-resolver-o-problema-do-plastico/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -904,8 +928,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-28">
-                        <a href="/blog/2021/09/28/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-28">
+                        <a class='text-muted' href="/2021/09/28/">
                             28 de
                             
                             Setembro
@@ -917,12 +941,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/28/proibir-sacolas-plasticas-e-uma-boa-ideia/" addthis:title="Proibir sacolas plásticas é uma boa ideia?" addthis:description="Estejam essa e outras proibições funcionando ou não, muitos agora reconhecem que tais medidas definitivamente têm consequências inesperadas.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -969,9 +993,9 @@
                 
                     <p itemprop="description">Estejam essa e outras proibições funcionando ou não, muitos agora reconhecem que tais medidas definitivamente têm consequências inesperadas.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/28/proibir-sacolas-plasticas-e-uma-boa-ideia/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/28/proibir-sacolas-plasticas-e-uma-boa-ideia/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/28/proibir-sacolas-plasticas-e-uma-boa-ideia/">
+                    <a class='card-link float-end' href="/2021/09/28/proibir-sacolas-plasticas-e-uma-boa-ideia/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -992,8 +1016,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-28">
-                        <a href="/blog/2021/09/28/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-28">
+                        <a class='text-muted' href="/2021/09/28/">
                             28 de
                             
                             Setembro
@@ -1005,12 +1029,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/28/nosso-planeta-esta-se-afogando-na-poluicao-do-plastico-mas-varias-solucoes-ja-estao-aqui-gracas-a-engenhosidade-humana/" addthis:title="Nosso planeta está se afogando na poluição do plástico, mas várias soluções já estão aqui — graças à engenhosidade humana" addthis:description="Líquido magnético, robôs que limpam praias e estradas de plástico estão entre as tecnologias que os humanos estão usando para combater um dos principais problemas ambientais do mundo: a poluição por plástico.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1057,9 +1081,9 @@
                 
                     <p itemprop="description">Líquido magnético, robôs que limpam praias e estradas de plástico estão entre as tecnologias que os humanos estão usando para combater um dos principais problemas ambientais do mundo: a poluição por plástico.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/28/nosso-planeta-esta-se-afogando-na-poluicao-do-plastico-mas-varias-solucoes-ja-estao-aqui-gracas-a-engenhosidade-humana/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/28/nosso-planeta-esta-se-afogando-na-poluicao-do-plastico-mas-varias-solucoes-ja-estao-aqui-gracas-a-engenhosidade-humana/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/28/nosso-planeta-esta-se-afogando-na-poluicao-do-plastico-mas-varias-solucoes-ja-estao-aqui-gracas-a-engenhosidade-humana/">
+                    <a class='card-link float-end' href="/2021/09/28/nosso-planeta-esta-se-afogando-na-poluicao-do-plastico-mas-varias-solucoes-ja-estao-aqui-gracas-a-engenhosidade-humana/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1080,8 +1104,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-21">
-                        <a href="/blog/2021/09/21/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-21">
+                        <a class='text-muted' href="/2021/09/21/">
                             21 de
                             
                             Setembro
@@ -1093,12 +1117,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/21/professora-consegue-liminar-na-justica-contra-vacinacao-obrigatoria/" addthis:title="Professora consegue liminar na Justiça contra vacinação obrigatória" addthis:description="Ela comprovou ter anticorpos naturais e optou por não tomar a vacina contra a Covid-19.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1145,9 +1169,9 @@
                 
                     <p itemprop="description">Ela comprovou ter anticorpos naturais e optou por não tomar a vacina contra a Covid-19.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/21/professora-consegue-liminar-na-justica-contra-vacinacao-obrigatoria/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/21/professora-consegue-liminar-na-justica-contra-vacinacao-obrigatoria/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/21/professora-consegue-liminar-na-justica-contra-vacinacao-obrigatoria/">
+                    <a class='card-link float-end' href="/2021/09/21/professora-consegue-liminar-na-justica-contra-vacinacao-obrigatoria/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1168,8 +1192,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-16">
-                        <a href="/blog/2021/09/16/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-16">
+                        <a class='text-muted' href="/2021/09/16/">
                             16 de
                             
                             Setembro
@@ -1181,12 +1205,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/16/obrigar-o-uso-de-mascaras-e-seguir-a-ciencia/" addthis:title="Obrigar o uso de máscaras é seguir a ciência?" addthis:description="&quot;Não existe tal coisa de dever científico&quot;, já alertava Mises em 1947.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1233,9 +1257,9 @@
                 
                     <p itemprop="description">&quot;Não existe tal coisa de dever científico&quot;, já alertava Mises em 1947.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/16/obrigar-o-uso-de-mascaras-e-seguir-a-ciencia/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/16/obrigar-o-uso-de-mascaras-e-seguir-a-ciencia/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/16/obrigar-o-uso-de-mascaras-e-seguir-a-ciencia/">
+                    <a class='card-link float-end' href="/2021/09/16/obrigar-o-uso-de-mascaras-e-seguir-a-ciencia/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1256,8 +1280,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-16">
-                        <a href="/blog/2021/09/16/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-16">
+                        <a class='text-muted' href="/2021/09/16/">
                             16 de
                             
                             Setembro
@@ -1269,12 +1293,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/16/mascaras-ciencia-incerta/" addthis:title="Máscaras: ciência incerta?" addthis:description="Um artigo recente da revista New York disse que a ciência sobre as máscaras &quot;permanece incerta&quot;.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1321,9 +1345,9 @@
                 
                     <p itemprop="description">Um artigo recente da revista New York disse que a ciência sobre as máscaras &quot;permanece incerta&quot;.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/16/mascaras-ciencia-incerta/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/16/mascaras-ciencia-incerta/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/16/mascaras-ciencia-incerta/">
+                    <a class='card-link float-end' href="/2021/09/16/mascaras-ciencia-incerta/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1344,8 +1368,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-16">
-                        <a href="/blog/2021/09/16/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-16">
+                        <a class='text-muted' href="/2021/09/16/">
                             16 de
                             
                             Setembro
@@ -1357,12 +1381,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/16/mascaras-novo-estudo-descobre-que-obriga-las-nao-reduz-mortes-hospitalizacoes-nem-casos-de-covid/" addthis:title="Máscaras: novo estudo descobre que obrigá-las não reduz mortes, hospitalizações nem casos de Covid" addthis:description="&quot;Todos os resultados medidos foram maiores, em média, no período pós máscara&quot;, concluíram os pesquisadores.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1409,9 +1433,9 @@
                 
                     <p itemprop="description">&quot;Todos os resultados medidos foram maiores, em média, no período pós máscara&quot;, concluíram os pesquisadores.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/16/mascaras-novo-estudo-descobre-que-obriga-las-nao-reduz-mortes-hospitalizacoes-nem-casos-de-covid/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/16/mascaras-novo-estudo-descobre-que-obriga-las-nao-reduz-mortes-hospitalizacoes-nem-casos-de-covid/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/16/mascaras-novo-estudo-descobre-que-obriga-las-nao-reduz-mortes-hospitalizacoes-nem-casos-de-covid/">
+                    <a class='card-link float-end' href="/2021/09/16/mascaras-novo-estudo-descobre-que-obriga-las-nao-reduz-mortes-hospitalizacoes-nem-casos-de-covid/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1432,8 +1456,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-14">
-                        <a href="/blog/2021/09/14/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-14">
+                        <a class='text-muted' href="/2021/09/14/">
                             14 de
                             
                             Setembro
@@ -1445,12 +1469,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/14/mentiras-cavalares-sobre-um-remedio-que-ganhou-o-premio-nobel/" addthis:title="Mentiras &quot;cavalares&quot; sobre um remédio que ganhou o Prêmio Nobel" addthis:description="A ivermectina, uma droga geralmente usada em ambiente veterinário, mas também aprovada para uso humano em certas situações, tem ganhado recentemente uma reputação.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1497,9 +1521,9 @@
                 
                     <p itemprop="description">A ivermectina, uma droga geralmente usada em ambiente veterinário, mas também aprovada para uso humano em certas situações, tem ganhado recentemente uma reputação.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/14/mentiras-cavalares-sobre-um-remedio-que-ganhou-o-premio-nobel/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/14/mentiras-cavalares-sobre-um-remedio-que-ganhou-o-premio-nobel/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/14/mentiras-cavalares-sobre-um-remedio-que-ganhou-o-premio-nobel/">
+                    <a class='card-link float-end' href="/2021/09/14/mentiras-cavalares-sobre-um-remedio-que-ganhou-o-premio-nobel/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1520,8 +1544,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-12">
-                        <a href="/blog/2021/09/12/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-12">
+                        <a class='text-muted' href="/2021/09/12/">
                             12 de
                             
                             Setembro
@@ -1533,12 +1557,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/12/perspectivas-sobre-a-pandemia-com-o-dr-peter-mccullough/" addthis:title="Perspectivas sobre a pandemia com o Dr. Peter McCullough" addthis:description="Em 22 de janeiro de 2021, 186 mortes já haviam sido relatadas após a vacinação contra a Covid-19 – mais do que o suficiente para atingir o sinal de preocupação com a mortalidade.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1585,9 +1609,9 @@
                 
                     <p itemprop="description">Em 22 de janeiro de 2021, 186 mortes já haviam sido relatadas após a vacinação contra a Covid-19 – mais do que o suficiente para atingir o sinal de preocupação com a mortalidade.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/12/perspectivas-sobre-a-pandemia-com-o-dr-peter-mccullough/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/12/perspectivas-sobre-a-pandemia-com-o-dr-peter-mccullough/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/12/perspectivas-sobre-a-pandemia-com-o-dr-peter-mccullough/">
+                    <a class='card-link float-end' href="/2021/09/12/perspectivas-sobre-a-pandemia-com-o-dr-peter-mccullough/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1608,8 +1632,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-07">
-                        <a href="/blog/2021/09/07/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-07">
+                        <a class='text-muted' href="/2021/09/07/">
                             07 de
                             
                             Setembro
@@ -1621,12 +1645,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/07/territorio-perigoso-a-frente-como-uma-sociedade-segregada-por-vacinas-se-parece-para-os-nao-vacinados/" addthis:title="Território perigoso à frente: como uma sociedade segregada por vacinas se parece para os não-vacinados" addthis:description="A ideia de que as medidas contra a Covid poderiam incluir vacinação obrigatória e passaportes de vacinação, resultando em uma sociedade segregada onde apenas aqueles participando do experimento da vacina teriam direitos humanos, já foi rotulada como uma teoria da conspiração feroz — mas agora estamos adentrando esse território perigoso.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1673,9 +1697,9 @@
                 
                     <p itemprop="description">A ideia de que as medidas contra a Covid poderiam incluir vacinação obrigatória e passaportes de vacinação, resultando em uma sociedade segregada onde apenas aqueles participando do experimento da vacina teriam direitos humanos, já foi rotulada como uma teoria da conspiração feroz — mas agora estamos adentrando esse território perigoso.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/07/territorio-perigoso-a-frente-como-uma-sociedade-segregada-por-vacinas-se-parece-para-os-nao-vacinados/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/07/territorio-perigoso-a-frente-como-uma-sociedade-segregada-por-vacinas-se-parece-para-os-nao-vacinados/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/07/territorio-perigoso-a-frente-como-uma-sociedade-segregada-por-vacinas-se-parece-para-os-nao-vacinados/">
+                    <a class='card-link float-end' href="/2021/09/07/territorio-perigoso-a-frente-como-uma-sociedade-segregada-por-vacinas-se-parece-para-os-nao-vacinados/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1696,8 +1720,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-04">
-                        <a href="/blog/2021/09/04/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-04">
+                        <a class='text-muted' href="/2021/09/04/">
                             04 de
                             
                             Setembro
@@ -1709,12 +1733,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/04/a-moralidade-da-manada-e-os-nao-vacinados/" addthis:title="A moralidade da manada e os não-vacinados" addthis:description="A campanha contra os não vacinados, vestida com o jaleco branco da Ciência, munida de dados tendenciosos, e balançando a bandeira do altruísmo, canaliza um impulso antigo e brutal.">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1761,9 +1785,9 @@
                 
                     <p itemprop="description">A campanha contra os não vacinados, vestida com o jaleco branco da Ciência, munida de dados tendenciosos, e balançando a bandeira do altruísmo, canaliza um impulso antigo e brutal.</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/04/a-moralidade-da-manada-e-os-nao-vacinados/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/04/a-moralidade-da-manada-e-os-nao-vacinados/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/04/a-moralidade-da-manada-e-os-nao-vacinados/">
+                    <a class='card-link float-end' href="/2021/09/04/a-moralidade-da-manada-e-os-nao-vacinados/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1784,8 +1808,8 @@
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="2021-09-02">
-                        <a href="/blog/2021/09/02/">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="2021-09-02">
+                        <a class='text-muted' href="/2021/09/02/">
                             02 de
                             
                             Setembro
@@ -1797,12 +1821,12 @@
                 </div>
                 <div class='col-sm-6'>
                     
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="https://cabecalivre.com/2021/09/02/o-fascismo-e-o-antifestival/" addthis:title="O fascismo e o antifestival" addthis:description="Parece que hoje estamos parcialmente emergindo de uma série extensa de antifestivais, também conhecidos como &quot;lockdowns&quot;. Eles acompanharam tendências totalitárias e uma hostilidade quase fascista aos verdadeiros festivais ou mesmo a qualquer coisa que se assemelhe a lazer em público. Além disso, muitas de nossas medidas de saúde pública têm um elenco ritualístico distinto, e...">
                                 <a class="addthis_button_facebook"></a>
                                 <a class="addthis_button_twitter" data-via="CabecaLivreCom"></a>
-                                <a class="addthis_button_google_plusone_share"></a>
+                                <a class="addthis_button_telegram"></a>
                                 <a class="addthis_button_favorites"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
@@ -1849,9 +1873,9 @@
                 
                     <p itemprop="description">Parece que hoje estamos parcialmente emergindo de uma série extensa de antifestivais, também conhecidos como &quot;lockdowns&quot;. Eles acompanharam tendências totalitárias e uma hostilidade quase fascista aos verdadeiros festivais ou mesmo a qualquer coisa que se assemelhe a lazer em público. Além disso, muitas de nossas medidas de saúde pública têm um elenco ritualístico distinto, e...</p>
                     
-                        <a class='btn btn-primary float-left' href="/2021/09/02/o-fascismo-e-o-antifestival/#disqus_thread">Comentários</a>
+                        <a class='card-link float-start' href="/2021/09/02/o-fascismo-e-o-antifestival/#disqus_thread">Comentários</a>
                     
-                    <a class='btn btn-primary float-right' href="/2021/09/02/o-fascismo-e-o-antifestival/">
+                    <a class='card-link float-end' href="/2021/09/02/o-fascismo-e-o-antifestival/">
                         Leia mais &rsaquo;
                     </a>
                 </div>
@@ -1863,9 +1887,9 @@
     </div><!-- .blog-post -->
 
 
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card mb-3" id="about">
+                </div>
+                <div class="col-sm-4">
+                    <div class="card mb-3" id="about">
     <div class="card-header">
         <h3><a name="about"></a>Sobre</h3>
     </div>
@@ -1882,56 +1906,56 @@
                 <span itemprop="name">Cabeça Livre</span>
             </a>
         </p>
-        <p class="text-center" itemprop="description">
+        <p class="text" itemprop="description">
             Propagando ideias de liberdade.
         </p>
         <!-- Follow Buttons -->
 <div class="follow-buttons text-center">
     
-        <a class="btn btn-facebook" href="https://facebook.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-facebook" href="https://facebook.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-facebook-f"></i>
         </a>
     
     
-        <a class="btn btn-twitter" href="https://twitter.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-twitter" href="https://twitter.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-twitter"></i>
         </a>
     
     
-        <a class="btn btn-instagram" href="https://instagram.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-instagram" href="https://instagram.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-instagram"></i>
         </a>
     
     
-        <a class="btn btn-youtube" href="https://youtube.com/channel/UCvy3zgcREgyeo8LY2vdPxmw" itemprop="sameAs" role="button">
+    
+        <a class="btn btn-primary btn-youtube" href="https://youtube.com/channel/UCvy3zgcREgyeo8LY2vdPxmw" itemprop="sameAs" role="button">
             <i class="fab fa-youtube"></i>
         </a>
     
     
-        <a class="btn btn-telegram" href="https://t.me/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-telegram" href="https://t.me/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="fab fa-telegram-plane"></i>
         </a>
     
     
-        <a class="btn btn-gab" href="https://gab.com/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-gab" href="https://gab.com/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="gab fa-gab-g"></i>
         </a>
     
     
-        <a class="btn btn-gettr" href="https://gettr.com/user/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-gettr" href="https://gettr.com/user/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="gettr fa-gettr"></i>
         </a>
     
     
-        <a class="btn btn-parler" href="https://parler.com/#/user/CabecaLivreCom" itemprop="sameAs" role="button">
+        <a class="btn btn-primary btn-parler" href="https://parler.com/#/user/CabecaLivreCom" itemprop="sameAs" role="button">
             <i class="parler fa-parler"></i>
         </a>
     
     
     
     
-    
-    <a class="btn btn-rss" href="/feed.xml" role="button">
+    <a class="btn btn-primary btn-rss" href="/feed.xml" role="button">
         <i class="fas fa-rss"></i>
     </a>
 </div>
@@ -1946,8 +1970,8 @@
     </div>
     <div class="card-body" itemprop="author" itemscope itemtype="http://schema.org/Person">
         <p class="text-center">
-            <a href='https://cabecalivre.com/daniel-peterson.jpg' itemprop='url'>
-                <img src='https://cabecalivre.com/daniel-peterson.jpg' class='img-fluid img-thumbnail rounded-circle' style='max-width: 150px'>
+            <a href='https://cabecalivre.com/daniel-peterson.jpg' itemprop='url' title='Daniel Peterson'>
+                <img src='https://cabecalivre.com/daniel-peterson.jpg' class='img-fluid img-thumbnail rounded-circle'>
             </a>
         </p>
         
@@ -1968,7 +1992,7 @@
     <div class="card-body">
         
 <!-- A-ADS Begin -->
-<iframe data-aa="1673147" src="//acceptable.a-ads.com/1673147" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+<iframe data-aa='1673147' src='//acceptable.a-ads.com/1673147' style='border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;'></iframe>
 <!-- A-ADS End -->
 
 
@@ -2000,13 +2024,13 @@
     </div><!-- .card-body -->
 </div><!-- .card -->
 
-                    </div>
                 </div>
             </div>
+        </div>
 
-            <footer class="footer">
+        <footer class="footer mt-auto py-3 bg-light shadow-lg">
     <div class="container">
-        Copyleft 2022 <a href='#author'>Daniel Peterson</a>. Todos os direitos liberados.
+        <span class="text-muted">Copyleft 2022 <a href='#author'>Daniel Peterson</a>. Todos os direitos liberados.</span>
     </div>
 </footer>
 
@@ -2048,8 +2072,7 @@
 
 
 
-            
-        </main>
-    </div><!-- .bmd-layout-container -->
+        
+    </main>
 </body>
 </html>

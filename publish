@@ -1,0 +1,19 @@
+#!/bin/bash
+USER="cabecalivrecom"
+SOURCE="cabecalivre-website"
+TARGET="cabecalivrecom.github.io"
+
+git add --all .
+git stash
+LAST_COMMIT_HASH=`git rev-parse HEAD`
+JEKYLL_ENV=production bundle exec jekyll build
+cd "../$TARGET"
+git pull
+git rm -rf *
+touch .nojekyll
+cp -r ../$SOURCE/_site/. . # https://superuser.com/a/367303/458848
+git add --all .
+git commit --allow-empty -m "Publicando mudanças no site"
+git push
+cd "../$SOURCE"
+git stash pop
