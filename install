@@ -4,9 +4,19 @@ command -v bundle >/dev/null 2>&1 || {
     echo -e >&2 "To install the software needed to build this website, you" \
         "must have Bundler installed on your system. Please install Bundler" \
         "to continue.\n\nIn its turn, Bundler requires Ruby and RubyGems to" \
-        "be installed. Please install them if you haven't done that yet.";
+        "be installed.\n\nPlease install them if you haven't done that yet.";
+    exit 1;
+}
+
+command -v npm >/dev/null 2>&1 || {
+    echo -e >&2 "To install the software needed to build this website, you" \
+        "must have the Node Package Manager (NPM) installed on your system. " \
+        "Please install NPM to continue.\n\nIn its turn, NPM requires Node.js" \
+        "to be installed.\n\nPlease install them if you haven't done that yet.";
     exit 1;
 }
 
 # https://stackoverflow.com/a/49719722/1657502
 bundle install --path vendor/bundle
+
+npm install
