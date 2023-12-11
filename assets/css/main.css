@@ -4,6 +4,7 @@
 
 :root {
     --bs-body-bg: var(--material-color-gray-300);
+    /* Change the following to use different colors on your website */
     --bs-dark: var(--material-color-gray-800);
     --bs-dark-rgb: 66, 66, 66;
     --bs-info: var(--material-color-blue-50);
