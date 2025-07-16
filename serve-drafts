@@ -1,2 +1,2 @@
 #!/bin/bash
-bundle exec jekyll serve --drafts --config _config.yml,_config_development.yml --host=0.0.0.0 --livereload
+bundle exec jekyll serve --drafts --config _config.yml,_config_development.yml --host=0.0.0.0

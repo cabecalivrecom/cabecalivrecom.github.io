@@ -239,65 +239,6 @@ https://pro.propeller.in/components/floating-button.php
     z-index: 1000;
 }
 
-/* Follow Buttons */
-
-div.follow-buttons a {
-    height: 50px;
-    width: 50px;
-}
-
-div.follow-buttons .btn-facebook {
-    background-color: var(--material-color-indigo-600);
-}
-
-div.follow-buttons .btn-twitter {
-    background-color: var(--material-color-blue-500);
-}
-
-div.follow-buttons .btn-instagram {
-    background-color: var(--material-color-pink-500);
-}
-
-div.follow-buttons .btn-linkedin {
-    background-color: var(--material-color-blue-800);
-}
-
-div.follow-buttons .btn-youtube {
-    background-color: var(--material-color-red-a700);
-}
-
-div.follow-buttons .btn-telegram {
-    background-color: var(--material-color-light-blue-700);
-}
-
-div.follow-buttons .btn-gab {
-    background-color: var(--material-color-green-a400);
-}
-
-div.follow-buttons .btn-gettr {
-    background-color: var(--material-color-red-a700);
-}
-
-div.follow-buttons .btn-parler {
-    background-color: var(--material-color-pink-900);
-}
-
-div.follow-buttons .btn-foursquare {
-    background-color: var(--material-color-pink-a200);
-}
-
-div.follow-buttons .btn-github {
-    background-color: var(--material-color-gray-900);
-}
-
-div.follow-buttons .btn-gitlab {
-    background-color: var(--material-color-deep-orange-700);
-}
-
-div.follow-buttons .btn-rss {
-    background-color: var(--material-color-orange-700);
-}
-
 /* Linktree */
 
 #linktree-logo {
